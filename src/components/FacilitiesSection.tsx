@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Computer, Users, GraduationCap, Database, Server, Microscope } from "lucide-react";
+import { Users, Computer, GraduationCap } from "lucide-react";
 
 const FacilitiesSection = () => {
   const facilities = [
@@ -21,24 +21,6 @@ const FacilitiesSection = () => {
       description: "Strong industry connections ensuring excellent placement opportunities.",
       icon: <GraduationCap className="w-10 h-10 text-cse-accent" />,
       link: "/facilities#placements"
-    },
-    {
-      title: "Research Labs",
-      description: "Specialized labs for research in emerging technologies.",
-      icon: <Microscope className="w-10 h-10 text-cse-accent" />,
-      link: "/facilities#research"
-    },
-    {
-      title: "Data Center",
-      description: "Campus data center providing computing resources for advanced projects.",
-      icon: <Server className="w-10 h-10 text-cse-accent" />,
-      link: "/facilities#datacenter"
-    },
-    {
-      title: "Digital Library",
-      description: "Access to digital resources, journals, and research papers.",
-      icon: <Database className="w-10 h-10 text-cse-accent" />,
-      link: "/facilities#library"
     }
   ];
 
@@ -46,14 +28,14 @@ const FacilitiesSection = () => {
     <section id="facilities-section" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="section-title">Our Facilities</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-cse">Our Facilities</h2>
           <p className="max-w-2xl mx-auto text-gray-600">
             The Department of Computer Science & Engineering offers world-class facilities to
             ensure that our students receive the best education and practical experience.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           {facilities.map((facility, index) => (
             <Link key={index} to={facility.link} className="block">
               <div className="bg-white rounded-lg shadow-md p-6 h-full card-hover">
