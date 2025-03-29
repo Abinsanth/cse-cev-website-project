@@ -1,5 +1,6 @@
 
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Alumni = () => {
   useEffect(() => {
@@ -167,12 +168,12 @@ const Alumni = () => {
           </div>
           
           <div className="text-center mt-8">
-            <a 
-              href="#" 
+            <Link 
+              to="/alumni/register" 
               className="inline-block bg-cse hover:bg-cse-light text-white font-medium px-6 py-3 rounded-md transition-colors"
             >
               Register with Alumni Network
-            </a>
+            </Link>
           </div>
         </div>
       </div>

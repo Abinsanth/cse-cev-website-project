@@ -44,8 +44,15 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <span className="text-xl font-bold text-cse">CSE Department</span>
-              <span className="text-sm ml-2 text-cse-accent">College of Engineering Vadakara</span>
+              <img 
+                src="/lovable-uploads/a25cc94a-59df-4919-9795-a79dd7d42a9a.png" 
+                alt="Department Logo" 
+                className="h-12 mr-3"
+              />
+              <div className="flex flex-col">
+                <span className="text-xl font-bold text-cse">Computer Science Department</span>
+                <span className="text-sm text-cse-accent">College of Engineering Vadakara</span>
+              </div>
             </Link>
           </div>
 
@@ -57,7 +64,7 @@ const Navbar = () => {
                 to={link.path}
                 className={`font-medium transition-colors hover:text-cse-accent ${
                   location.pathname === link.path
-                    ? "text-cse-accent border-b-2 border-cse-accent"
+                    ? "text-cse-accent"
                     : "text-cse"
                 }`}
               >

@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import Facilities from "./pages/Facilities";
 import About from "./pages/About";
 import Alumni from "./pages/Alumni";
+import AlumniRegistration from "./pages/AlumniRegistration";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="/facilities" element={<Facilities />} />
             <Route path="/about" element={<About />} />
             <Route path="/alumni" element={<Alumni />} />
+            <Route path="/alumni/register" element={<AlumniRegistration />} />
             <Route path="/contact" element={<Contact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
