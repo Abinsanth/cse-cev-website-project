@@ -1,7 +1,6 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Table, TableBody, TableCell, TableHead, TableRow } from "@/components/ui/table";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
@@ -10,8 +9,8 @@ interface PlacedStudent {
   name: string;
   photo: string;
   company: string;
+  companyLogo?: string;
   batch: string;
-  package: string;
 }
 
 const placedStudents: PlacedStudent[] = [
@@ -20,94 +19,76 @@ const placedStudents: PlacedStudent[] = [
     name: "Arun Kumar",
     photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
     company: "Microsoft",
-    batch: "2023",
-    package: "₹18.5 LPA"
+    companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/512px-Microsoft_logo.svg.png",
+    batch: "2022-23 Batch"
   },
   {
     id: 2,
     name: "Priya Singh",
     photo: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80",
     company: "Amazon",
-    batch: "2023",
-    package: "₹22 LPA"
+    companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png",
+    batch: "2022-23 Batch"
   },
   {
     id: 3,
     name: "Rahul Sharma",
     photo: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80",
     company: "Google",
-    batch: "2022",
-    package: "₹24 LPA"
+    companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png",
+    batch: "2021-22 Batch"
   },
   {
     id: 4,
     name: "Anjali Patel",
     photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
     company: "Adobe",
-    batch: "2023",
-    package: "₹17 LPA"
+    companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Electronic_Arts.svg/1280px-Adobe_Electronic_Arts.svg.png",
+    batch: "2022-23 Batch"
   },
   {
     id: 5,
     name: "Vikram Mehta",
     photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
     company: "IBM",
-    batch: "2022",
-    package: "₹15.5 LPA"
+    companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/800px-IBM_logo.svg.png",
+    batch: "2021-22 Batch"
   },
   {
     id: 6,
     name: "Sneha Reddy",
     photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80",
     company: "Wipro",
-    batch: "2023",
-    package: "₹12 LPA"
-  },
-  {
-    id: 7,
-    name: "Karthik Menon",
-    photo: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=200&q=80",
-    company: "TCS",
-    batch: "2022",
-    package: "₹10 LPA"
-  },
-  {
-    id: 8,
-    name: "Divya Nair",
-    photo: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80",
-    company: "Infosys",
-    batch: "2023",
-    package: "₹11 LPA"
+    companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Wipro_Primary_Logo_Color_RGB.svg/1280px-Wipro_Primary_Logo_Color_RGB.svg.png",
+    batch: "2022-23 Batch"
   }
 ];
 
 const StudentProfile = ({ student }: { student: PlacedStudent }) => {
   return (
-    <Card className="h-full">
-      <CardContent className="p-4">
-        <div className="flex items-center gap-3 mb-3">
-          <Avatar className="w-12 h-12 border-2 border-cse-accent">
-            <AvatarImage src={student.photo} alt={student.name} />
-            <AvatarFallback>{student.name.charAt(0)}</AvatarFallback>
-          </Avatar>
-          <h3 className="text-lg font-bold">{student.name}</h3>
-        </div>
-        <Table>
-          <TableBody>
-            <TableRow>
-              <TableHead className="font-medium text-xs">Company</TableHead>
-              <TableCell className="text-sm">{student.company}</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableHead className="font-medium text-xs">Batch</TableHead>
-              <TableCell className="text-sm">{student.batch}</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableHead className="font-medium text-xs">Package</TableHead>
-              <TableCell className="text-sm font-semibold text-cse-accent">{student.package}</TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
+    <Card className="h-full bg-white border-0 rounded-md shadow-md">
+      <CardContent className="p-6 flex flex-col items-center text-center">
+        <Avatar className="w-24 h-24 border-2 border-cse-accent mb-4">
+          <AvatarImage src={student.photo} alt={student.name} className="object-cover" />
+          <AvatarFallback>{student.name.charAt(0)}</AvatarFallback>
+        </Avatar>
+        
+        <h3 className="text-xl font-bold mb-1 text-gray-800">{student.name}</h3>
+        <p className="text-gray-500 mb-4">{student.batch}</p>
+        
+        {student.companyLogo ? (
+          <div className="mt-auto h-12 flex items-center justify-center">
+            <img 
+              src={student.companyLogo} 
+              alt={`${student.company} logo`} 
+              className="max-h-10 max-w-[120px] object-contain" 
+            />
+          </div>
+        ) : (
+          <div className="mt-auto">
+            <p className="font-medium text-gray-700">{student.company}</p>
+          </div>
+        )}
       </CardContent>
     </Card>
   );
@@ -115,7 +96,7 @@ const StudentProfile = ({ student }: { student: PlacedStudent }) => {
 
 const PlacementProfiles = () => {
   const [currentPage, setCurrentPage] = useState(0);
-  const profilesPerPage = 4;
+  const profilesPerPage = 3; // Changed from 4 to 3
   const totalPages = Math.ceil(placedStudents.length / profilesPerPage);
 
   useEffect(() => {
@@ -132,13 +113,13 @@ const PlacementProfiles = () => {
   );
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-cse-accent text-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
           Placement Records
         </h2>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           <AnimatePresence mode="wait">
             {currentProfiles.map((student) => (
               <motion.div
@@ -154,13 +135,13 @@ const PlacementProfiles = () => {
           </AnimatePresence>
         </div>
         
-        <div className="flex justify-center mt-6 gap-2">
+        <div className="flex justify-center mt-8 gap-2">
           {Array.from({ length: totalPages }).map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentPage(index)}
-              className={`w-2.5 h-2.5 rounded-full ${
-                index === currentPage ? "bg-cse-accent" : "bg-gray-300"
+              className={`w-3 h-3 rounded-full ${
+                index === currentPage ? "bg-white" : "bg-white/40"
               }`}
               aria-label={`View page ${index + 1}`}
             />
