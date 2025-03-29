@@ -24,8 +24,8 @@ const Index = () => {
         <PlacementStats />
       </div>
       <FacilitiesSection />
-      <AboutSection />
       <PlacementProfiles />
+      <AboutSection />
       <AlumniSection />
       <ContactSection />
     </main>
