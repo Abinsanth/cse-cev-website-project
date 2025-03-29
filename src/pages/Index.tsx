@@ -1,5 +1,6 @@
 
 import Hero from "@/components/Hero";
+import PlacementStats from "@/components/PlacementStats";
 import FacilitiesSection from "@/components/FacilitiesSection";
 import AboutSection from "@/components/AboutSection";
 import AlumniSection from "@/components/AlumniSection";
@@ -18,6 +19,9 @@ const Index = () => {
   return (
     <main>
       <Hero />
+      <div id="placement-stats">
+        <PlacementStats />
+      </div>
       <FacilitiesSection />
       <AboutSection />
       <AlumniSection />

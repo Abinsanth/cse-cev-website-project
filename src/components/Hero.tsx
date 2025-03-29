@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   const scrollToNextSection = () => {
-    const nextSection = document.getElementById("facilities-section");
+    const nextSection = document.getElementById("placement-stats");
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: "smooth" });
     }
