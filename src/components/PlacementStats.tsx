@@ -53,8 +53,8 @@ const PlacementStats = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4">
           <StatCounter value={22} label="Years of Excellence" />
-          <StatCounter value={9} label="UG Programmes" />
-          <StatCounter value={6} label="PG Programmes" />
+          <StatCounter value={145} label="Placed Students" />
+          <StatCounter value={42} label="Companies Visited" />
           <StatCounter value={85} label="Placement Records %" />
         </div>
       </div>
