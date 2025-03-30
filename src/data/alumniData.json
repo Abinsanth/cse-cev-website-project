@@ -1,0 +1,130 @@
+
+{
+  "alumniSuccessStories": [
+    {
+      "id": 1,
+      "name": "Arjun Kumar",
+      "batch": "2018",
+      "company": "Google",
+      "role": "Software Engineer",
+      "image": "/assets/alumni/alumni1.jpg",
+      "testimonial": "The Department of CSE at College of Engineering Vadakara provided me with a strong foundation in computer science that has been invaluable in my career. The faculty's guidance and the practical approach to learning helped me secure a position at Google."
+    },
+    {
+      "id": 2,
+      "name": "Meera Nair",
+      "batch": "2019",
+      "company": "Amazon",
+      "role": "Data Scientist",
+      "image": "/assets/alumni/alumni2.jpg",
+      "testimonial": "I'm grateful for the excellent education and mentorship I received at the CSE department. The research opportunities and industry exposure prepared me well for the challenges of working in a fast-paced tech environment at Amazon."
+    },
+    {
+      "id": 3,
+      "name": "Rahul Menon",
+      "batch": "2017",
+      "company": "Microsoft",
+      "role": "Product Manager",
+      "image": "/assets/alumni/alumni3.jpg",
+      "testimonial": "The project-based learning approach and emphasis on teamwork at the CSE department shaped me into a well-rounded professional. The skills I gained during my time there continue to help me excel in my role as a Product Manager at Microsoft."
+    },
+    {
+      "id": 4,
+      "name": "Priya Sharma",
+      "batch": "2019",
+      "company": "IBM",
+      "role": "Software Developer",
+      "image": "/assets/alumni/alumni4.jpg",
+      "testimonial": "The CSE department at CEV helped me develop not just technical skills but also soft skills that are essential in the workplace. The faculty's mentorship and the department's focus on practical learning were instrumental in my career growth at IBM."
+    },
+    {
+      "id": 5,
+      "name": "Ajith Nair",
+      "batch": "2016",
+      "company": "Infosys",
+      "role": "Technical Lead",
+      "image": "/assets/alumni/alumni5.jpg",
+      "testimonial": "My time at the CSE department of CEV laid a strong foundation for my career in software development. The curriculum's balance of theory and practice prepared me well for the challenges I face as a Technical Lead at Infosys."
+    },
+    {
+      "id": 6,
+      "name": "Sneha Patel",
+      "batch": "2018",
+      "company": "TCS",
+      "role": "Systems Analyst",
+      "image": "/assets/alumni/alumni6.jpg",
+      "testimonial": "I am thankful to the CSE department for providing me with the knowledge and skills needed to succeed in the IT industry. The department's emphasis on problem-solving and analytical thinking has been particularly valuable in my role at TCS."
+    },
+    {
+      "id": 7,
+      "name": "Vishnu Prasad",
+      "batch": "2020",
+      "company": "Wipro",
+      "role": "Software Engineer",
+      "image": "/assets/alumni/alumni7.jpg",
+      "testimonial": "The CSE department's focus on emerging technologies helped me stay relevant in a rapidly changing tech landscape. The practical exposure through projects and internships facilitated a smooth transition from college to my professional role at Wipro."
+    },
+    {
+      "id": 8,
+      "name": "Anjali Menon",
+      "batch": "2017",
+      "company": "Accenture",
+      "role": "Cloud Engineer",
+      "image": "/assets/alumni/alumni8.jpg",
+      "testimonial": "The diverse courses offered by the CSE department and the exposure to various technologies helped me explore different areas of computer science. This exploration led me to discover my passion for cloud computing, which I now pursue at Accenture."
+    },
+    {
+      "id": 9,
+      "name": "Sanjay Krishnan",
+      "batch": "2016",
+      "company": "Tech Mahindra",
+      "role": "DevOps Engineer",
+      "image": "/assets/alumni/alumni9.jpg",
+      "testimonial": "The CSE department's emphasis on both development and operations aspects of software engineering provided me with a holistic understanding of the field. This comprehensive knowledge has been crucial in my role as a DevOps Engineer at Tech Mahindra."
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "National Conference on Advanced Computing",
+      "date": "March 15-17, 2023",
+      "location": "Main Auditorium",
+      "image": "/assets/events/event1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Workshop on Artificial Intelligence",
+      "date": "January 10, 2023",
+      "location": "Conference Hall",
+      "image": "/assets/events/event2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Industry-Academia Meet",
+      "date": "November 5, 2022",
+      "location": "Seminar Hall",
+      "image": "/assets/events/event3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Hackathon 2022",
+      "date": "October 8-9, 2022",
+      "location": "Computer Labs",
+      "image": "/assets/events/event4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Cloud Computing Webinar",
+      "date": "August 20, 2022",
+      "location": "Online",
+      "image": "/assets/events/event5.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Tech Fest 2022",
+      "date": "February 25-27, 2022",
+      "location": "College Campus",
+      "image": "/assets/events/event6.jpg"
+    }
+  ]
+}

@@ -1,29 +1,12 @@
 
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Clock, Calendar, MapPin } from "lucide-react";
+import { Calendar, MapPin } from "lucide-react";
+import alumniData from "@/data/alumniData.json";
 
 const AboutSection = () => {
-  const pastEvents = [
-    {
-      title: "National Conference on Advanced Computing",
-      date: "March 15-17, 2023",
-      location: "Main Auditorium",
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      title: "Workshop on Artificial Intelligence",
-      date: "January 10, 2023",
-      location: "Conference Hall",
-      image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      title: "Industry-Academia Meet",
-      date: "November 5, 2022",
-      location: "Seminar Hall",
-      image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=800&q=80"
-    }
-  ];
+  // Display only 3 recent events on the home page
+  const recentEvents = alumniData.events.slice(0, 3);
 
   return (
     <section className="py-20 bg-white">
@@ -74,8 +57,8 @@ const AboutSection = () => {
         <div className="mt-20">
           <h3 className="text-2xl font-bold mb-8 text-center text-cse">Recent Events</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {pastEvents.map((event, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+            {recentEvents.map((event) => (
+              <div key={event.id} className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
                 <img 
                   src={event.image} 
                   alt={event.title} 

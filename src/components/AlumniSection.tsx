@@ -1,34 +1,11 @@
 
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import alumniData from "@/data/alumniData.json";
 
 const AlumniSection = () => {
-  const alumni = [
-    {
-      name: "Arjun Kumar",
-      batch: "2018",
-      company: "Google",
-      role: "Software Engineer",
-      image: "https://randomuser.me/api/portraits/men/32.jpg",
-      testimonial: "The Department of CSE at College of Engineering Vadakara provided me with a strong foundation in computer science that has been invaluable in my career. The faculty's guidance and the practical approach to learning helped me secure a position at Google."
-    },
-    {
-      name: "Meera Nair",
-      batch: "2019",
-      company: "Amazon",
-      role: "Data Scientist",
-      image: "https://randomuser.me/api/portraits/women/44.jpg",
-      testimonial: "I'm grateful for the excellent education and mentorship I received at the CSE department. The research opportunities and industry exposure prepared me well for the challenges of working in a fast-paced tech environment at Amazon."
-    },
-    {
-      name: "Rahul Menon",
-      batch: "2017",
-      company: "Microsoft",
-      role: "Product Manager",
-      image: "https://randomuser.me/api/portraits/men/67.jpg",
-      testimonial: "The project-based learning approach and emphasis on teamwork at the CSE department shaped me into a well-rounded professional. The skills I gained during my time there continue to help me excel in my role as a Product Manager at Microsoft."
-    }
-  ];
+  // Display only 3 alumni success stories on the home page
+  const featuredAlumni = alumniData.alumniSuccessStories.slice(0, 3);
 
   return (
     <section className="py-20 bg-gray-50">
@@ -42,8 +19,8 @@ const AlumniSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {alumni.map((alum, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md p-6 card-hover">
+          {featuredAlumni.map((alum) => (
+            <div key={alum.id} className="bg-white rounded-lg shadow-md p-6 card-hover">
               <div className="flex flex-col items-center mb-4">
                 <div className="w-24 h-24 rounded-full overflow-hidden mb-4 border-4 border-cse-accent">
                   <img 

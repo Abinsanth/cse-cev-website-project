@@ -1,6 +1,7 @@
 
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import alumniData from "@/data/alumniData.json";
 
 const Alumni = () => {
   useEffect(() => {
@@ -10,81 +11,6 @@ const Alumni = () => {
     // Scroll to top on page load
     window.scrollTo(0, 0);
   }, []);
-
-  const alumni = [
-    {
-      name: "Arjun Kumar",
-      batch: "2018",
-      company: "Google",
-      role: "Software Engineer",
-      image: "https://randomuser.me/api/portraits/men/32.jpg",
-      testimonial: "The Department of CSE at College of Engineering Vadakara provided me with a strong foundation in computer science that has been invaluable in my career. The faculty's guidance and the practical approach to learning helped me secure a position at Google."
-    },
-    {
-      name: "Meera Nair",
-      batch: "2019",
-      company: "Amazon",
-      role: "Data Scientist",
-      image: "https://randomuser.me/api/portraits/women/44.jpg",
-      testimonial: "I'm grateful for the excellent education and mentorship I received at the CSE department. The research opportunities and industry exposure prepared me well for the challenges of working in a fast-paced tech environment at Amazon."
-    },
-    {
-      name: "Rahul Menon",
-      batch: "2017",
-      company: "Microsoft",
-      role: "Product Manager",
-      image: "https://randomuser.me/api/portraits/men/67.jpg",
-      testimonial: "The project-based learning approach and emphasis on teamwork at the CSE department shaped me into a well-rounded professional. The skills I gained during my time there continue to help me excel in my role as a Product Manager at Microsoft."
-    },
-    {
-      name: "Priya Sharma",
-      batch: "2019",
-      company: "IBM",
-      role: "Software Developer",
-      image: "https://randomuser.me/api/portraits/women/33.jpg",
-      testimonial: "The CSE department at CEV helped me develop not just technical skills but also soft skills that are essential in the workplace. The faculty's mentorship and the department's focus on practical learning were instrumental in my career growth at IBM."
-    },
-    {
-      name: "Ajith Nair",
-      batch: "2016",
-      company: "Infosys",
-      role: "Technical Lead",
-      image: "https://randomuser.me/api/portraits/men/22.jpg",
-      testimonial: "My time at the CSE department of CEV laid a strong foundation for my career in software development. The curriculum's balance of theory and practice prepared me well for the challenges I face as a Technical Lead at Infosys."
-    },
-    {
-      name: "Sneha Patel",
-      batch: "2018",
-      company: "TCS",
-      role: "Systems Analyst",
-      image: "https://randomuser.me/api/portraits/women/56.jpg",
-      testimonial: "I am thankful to the CSE department for providing me with the knowledge and skills needed to succeed in the IT industry. The department's emphasis on problem-solving and analytical thinking has been particularly valuable in my role at TCS."
-    },
-    {
-      name: "Vishnu Prasad",
-      batch: "2020",
-      company: "Wipro",
-      role: "Software Engineer",
-      image: "https://randomuser.me/api/portraits/men/55.jpg",
-      testimonial: "The CSE department's focus on emerging technologies helped me stay relevant in a rapidly changing tech landscape. The practical exposure through projects and internships facilitated a smooth transition from college to my professional role at Wipro."
-    },
-    {
-      name: "Anjali Menon",
-      batch: "2017",
-      company: "Accenture",
-      role: "Cloud Engineer",
-      image: "https://randomuser.me/api/portraits/women/66.jpg",
-      testimonial: "The diverse courses offered by the CSE department and the exposure to various technologies helped me explore different areas of computer science. This exploration led me to discover my passion for cloud computing, which I now pursue at Accenture."
-    },
-    {
-      name: "Sanjay Krishnan",
-      batch: "2016",
-      company: "Tech Mahindra",
-      role: "DevOps Engineer",
-      image: "https://randomuser.me/api/portraits/men/77.jpg",
-      testimonial: "The CSE department's emphasis on both development and operations aspects of software engineering provided me with a holistic understanding of the field. This comprehensive knowledge has been crucial in my role as a DevOps Engineer at Tech Mahindra."
-    }
-  ];
 
   return (
     <main className="pt-24 pb-20">
@@ -99,8 +25,8 @@ const Alumni = () => {
 
         {/* Alumni Success Stories */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {alumni.map((alum, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md p-6 h-full card-hover">
+          {alumniData.alumniSuccessStories.map((alum) => (
+            <div key={alum.id} className="bg-white rounded-lg shadow-md p-6 h-full card-hover">
               <div className="flex flex-col items-center mb-4">
                 <div className="w-24 h-24 rounded-full overflow-hidden mb-4 border-4 border-cse-accent">
                   <img 
