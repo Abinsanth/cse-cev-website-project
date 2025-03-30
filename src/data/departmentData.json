@@ -1,0 +1,168 @@
+
+{
+  "faculty": [
+    {
+      "id": 1,
+      "name": "Dr. Sarah Johnson",
+      "photo": "/assets/faculty/faculty1.jpg",
+      "designation": "Professor & Head of Department"
+    },
+    {
+      "id": 2,
+      "name": "Dr. Michael Chen",
+      "photo": "/assets/faculty/faculty2.jpg",
+      "designation": "Associate Professor"
+    },
+    {
+      "id": 3,
+      "name": "Prof. Emily Rodriguez",
+      "photo": "/assets/faculty/faculty3.jpg",
+      "designation": "Assistant Professor"
+    },
+    {
+      "id": 4,
+      "name": "Dr. James Wilson",
+      "photo": "/assets/faculty/faculty4.jpg",
+      "designation": "Associate Professor"
+    }
+  ],
+  "labAssistants": [
+    {
+      "id": 1,
+      "name": "Robert Davis",
+      "photo": "/assets/lab-assistants/assistant1.jpg",
+      "designation": "Senior Lab Assistant"
+    },
+    {
+      "id": 2,
+      "name": "Anita Gupta",
+      "photo": "/assets/lab-assistants/assistant2.jpg",
+      "designation": "Lab Technician"
+    },
+    {
+      "id": 3,
+      "name": "David Wong",
+      "photo": "/assets/lab-assistants/assistant3.jpg",
+      "designation": "Lab Assistant"
+    }
+  ],
+  "labs": [
+    {
+      "id": 1,
+      "name": "Programming Lab",
+      "image": "/assets/labs/lab1.jpg",
+      "description": "Equipped with high-performance computers loaded with the latest development environments and programming tools for students to practice coding and problem-solving."
+    },
+    {
+      "id": 2,
+      "name": "Network Lab",
+      "image": "/assets/labs/lab2.jpg",
+      "description": "Features Cisco routers, switches, and network simulation software to help students understand network architectures, protocols, and configurations."
+    },
+    {
+      "id": 3,
+      "name": "Research Lab",
+      "image": "/assets/labs/lab3.jpg",
+      "description": "Advanced computing facilities for research in areas like artificial intelligence, machine learning, big data analytics, and cloud computing."
+    }
+  ],
+  "placements": {
+    "currentYear": [
+      {
+        "id": 1,
+        "name": "Alex Martinez",
+        "photo": "/assets/placements/student1.jpg",
+        "company": "Google",
+        "designation": "Software Engineer"
+      },
+      {
+        "id": 2,
+        "name": "Priya Sharma",
+        "photo": "/assets/placements/student2.jpg",
+        "company": "Microsoft",
+        "designation": "UX Designer"
+      },
+      {
+        "id": 3,
+        "name": "David Kim",
+        "photo": "/assets/placements/student3.jpg",
+        "company": "Amazon",
+        "designation": "Backend Developer"
+      },
+      {
+        "id": 4,
+        "name": "Aisha Patel",
+        "photo": "/assets/placements/student4.jpg",
+        "company": "TCS",
+        "designation": "System Analyst"
+      }
+    ],
+    "historicalYears": [
+      {
+        "year": "2022-23",
+        "image": "/assets/placements/batch2022.jpg",
+        "summary": "The 2022-23 batch achieved a placement rate of 92% with 35 students placed in top companies."
+      },
+      {
+        "year": "2021-22",
+        "image": "/assets/placements/batch2021.jpg",
+        "summary": "The 2021-22 batch achieved a placement rate of 88% with 32 students placed across various sectors."
+      },
+      {
+        "year": "2020-21",
+        "image": "/assets/placements/batch2020.jpg",
+        "summary": "The 2020-21 batch had a placement rate of 86% despite pandemic challenges."
+      }
+    ]
+  },
+  "placedStudents": [
+    {
+      "id": 1,
+      "name": "Arun Kumar",
+      "photo": "/assets/students/student1.jpg",
+      "company": "Microsoft",
+      "companyLogo": "/assets/companies/microsoft.png",
+      "batch": "2022-23 Batch"
+    },
+    {
+      "id": 2,
+      "name": "Priya Singh",
+      "photo": "/assets/students/student2.jpg",
+      "company": "Amazon",
+      "companyLogo": "/assets/companies/amazon.png",
+      "batch": "2022-23 Batch"
+    },
+    {
+      "id": 3,
+      "name": "Rahul Sharma",
+      "photo": "/assets/students/student3.jpg",
+      "company": "Google",
+      "companyLogo": "/assets/companies/google.png",
+      "batch": "2021-22 Batch"
+    },
+    {
+      "id": 4,
+      "name": "Anjali Patel",
+      "photo": "/assets/students/student4.jpg",
+      "company": "Adobe",
+      "companyLogo": "/assets/companies/adobe.png",
+      "batch": "2022-23 Batch"
+    },
+    {
+      "id": 5,
+      "name": "Vikram Mehta",
+      "photo": "/assets/students/student5.jpg",
+      "company": "IBM",
+      "companyLogo": "/assets/companies/ibm.png",
+      "batch": "2021-22 Batch"
+    },
+    {
+      "id": 6,
+      "name": "Sneha Reddy",
+      "photo": "/assets/students/student6.jpg",
+      "company": "Wipro",
+      "companyLogo": "/assets/companies/wipro.png",
+      "batch": "2022-23 Batch"
+    }
+  ]
+}

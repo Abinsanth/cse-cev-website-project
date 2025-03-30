@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Alumni from "./pages/Alumni";
 import AlumniRegistration from "./pages/AlumniRegistration";
 import Contact from "./pages/Contact";
+import HistoricalPlacements from "./pages/HistoricalPlacements";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -36,6 +37,7 @@ const App = () => (
             <Route path="/alumni" element={<Alumni />} />
             <Route path="/alumni/register" element={<AlumniRegistration />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/historical-placements" element={<HistoricalPlacements />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

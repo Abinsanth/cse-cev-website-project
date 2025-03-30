@@ -61,6 +61,11 @@ const Footer = () => {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link to="/historical-placements" className="text-white/90 hover:text-cse-accent transition-colors">
+                  Past Placements
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -92,21 +97,6 @@ const Footer = () => {
               >
                 <Linkedin className="w-5 h-5 text-white" />
               </a>
-            </div>
-            <div className="mt-6">
-              <p className="text-white/90">
-                Subscribe to our newsletter to get updates on events and activities.
-              </p>
-              <div className="mt-3 flex">
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  className="px-4 py-2 rounded-l-md flex-1 text-cse-text focus:outline-none"
-                />
-                <button className="bg-cse-accent hover:bg-cse-accent/90 text-white px-4 py-2 rounded-r-md transition-colors">
-                  Subscribe
-                </button>
-              </div>
             </div>
           </div>
         </div>

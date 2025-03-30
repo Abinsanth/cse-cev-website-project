@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import departmentData from "@/data/departmentData.json";
 
 interface PlacedStudent {
   id: number;
@@ -13,56 +14,7 @@ interface PlacedStudent {
   batch: string;
 }
 
-const placedStudents: PlacedStudent[] = [
-  {
-    id: 1,
-    name: "Arun Kumar",
-    photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80",
-    company: "Microsoft",
-    companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/512px-Microsoft_logo.svg.png",
-    batch: "2022-23 Batch"
-  },
-  {
-    id: 2,
-    name: "Priya Singh",
-    photo: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80",
-    company: "Amazon",
-    companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1024px-Amazon_logo.svg.png",
-    batch: "2022-23 Batch"
-  },
-  {
-    id: 3,
-    name: "Rahul Sharma",
-    photo: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80",
-    company: "Google",
-    companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png",
-    batch: "2021-22 Batch"
-  },
-  {
-    id: 4,
-    name: "Anjali Patel",
-    photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
-    company: "Adobe",
-    companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Electronic_Arts.svg/1280px-Adobe_Electronic_Arts.svg.png",
-    batch: "2022-23 Batch"
-  },
-  {
-    id: 5,
-    name: "Vikram Mehta",
-    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
-    company: "IBM",
-    companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/800px-IBM_logo.svg.png",
-    batch: "2021-22 Batch"
-  },
-  {
-    id: 6,
-    name: "Sneha Reddy",
-    photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80",
-    company: "Wipro",
-    companyLogo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Wipro_Primary_Logo_Color_RGB.svg/1280px-Wipro_Primary_Logo_Color_RGB.svg.png",
-    batch: "2022-23 Batch"
-  }
-];
+const placedStudents: PlacedStudent[] = departmentData.placedStudents;
 
 const StudentProfile = ({ student }: { student: PlacedStudent }) => {
   return (
@@ -96,7 +48,7 @@ const StudentProfile = ({ student }: { student: PlacedStudent }) => {
 
 const PlacementProfiles = () => {
   const [currentPage, setCurrentPage] = useState(0);
-  const profilesPerPage = 3; // Changed from 4 to 3
+  const profilesPerPage = 3;
   const totalPages = Math.ceil(placedStudents.length / profilesPerPage);
 
   useEffect(() => {
