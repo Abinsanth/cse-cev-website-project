@@ -1,7 +1,11 @@
 
 import { useState, useEffect } from "react";
-import departmentData from "@/data/departmentData.json";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { 
+  Dialog, 
+  DialogContent, 
+  DialogTrigger 
+} from "@/components/ui/dialog";
+import placementData from "@/data/placementData.json";
 
 interface HistoricalYear {
   year: string;
@@ -29,7 +33,7 @@ const HistoricalPlacements = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {departmentData.placements.historicalYears.map((year) => (
+          {placementData.historicalYears.map((year) => (
             <YearCard key={year.year} year={year} />
           ))}
         </div>

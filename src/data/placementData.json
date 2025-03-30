@@ -1,0 +1,199 @@
+
+{
+  "currentYearPlacements": [
+    {
+      "id": 1,
+      "name": "Alex Martinez",
+      "photo": "/assets/placements/student1.jpg",
+      "company": "Google",
+      "companyLogo": "/assets/companies/google.png",
+      "designation": "Software Engineer"
+    },
+    {
+      "id": 2,
+      "name": "Priya Sharma",
+      "photo": "/assets/placements/student2.jpg",
+      "company": "Microsoft",
+      "companyLogo": "/assets/companies/microsoft.png",
+      "designation": "UX Designer"
+    },
+    {
+      "id": 3,
+      "name": "David Kim",
+      "photo": "/assets/placements/student3.jpg",
+      "company": "Amazon",
+      "companyLogo": "/assets/companies/amazon.png",
+      "designation": "Backend Developer"
+    },
+    {
+      "id": 4,
+      "name": "Aisha Patel",
+      "photo": "/assets/placements/student4.jpg",
+      "company": "TCS",
+      "companyLogo": "/assets/companies/tcs.png",
+      "designation": "System Analyst"
+    },
+    {
+      "id": 5,
+      "name": "Mohammed Ali",
+      "photo": "/assets/placements/student5.jpg",
+      "company": "IBM",
+      "companyLogo": "/assets/companies/ibm.png",
+      "designation": "Cloud Solutions Architect"
+    },
+    {
+      "id": 6,
+      "name": "Sophia Chen",
+      "photo": "/assets/placements/student6.jpg",
+      "company": "Adobe",
+      "companyLogo": "/assets/companies/adobe.png",
+      "designation": "Front-end Developer"
+    },
+    {
+      "id": 7,
+      "name": "Rahul Mehta",
+      "photo": "/assets/placements/student7.jpg",
+      "company": "Accenture",
+      "companyLogo": "/assets/companies/accenture.png",
+      "designation": "Data Analyst"
+    },
+    {
+      "id": 8,
+      "name": "Emma Wilson",
+      "photo": "/assets/placements/student8.jpg",
+      "company": "Facebook",
+      "companyLogo": "/assets/companies/facebook.png",
+      "designation": "Product Manager"
+    },
+    {
+      "id": 9,
+      "name": "Jason Lee",
+      "photo": "/assets/placements/student9.jpg",
+      "company": "Wipro",
+      "companyLogo": "/assets/companies/wipro.png",
+      "designation": "Java Developer"
+    },
+    {
+      "id": 10,
+      "name": "Neha Gupta",
+      "photo": "/assets/placements/student10.jpg",
+      "company": "Infosys",
+      "companyLogo": "/assets/companies/infosys.png",
+      "designation": "Software Tester"
+    }
+  ],
+  "recentPlacements": [
+    {
+      "id": 1,
+      "name": "Arun Kumar",
+      "photo": "/assets/students/student1.jpg",
+      "company": "Microsoft",
+      "companyLogo": "/assets/companies/microsoft.png",
+      "batch": "2022-23 Batch"
+    },
+    {
+      "id": 2,
+      "name": "Priya Singh",
+      "photo": "/assets/students/student2.jpg",
+      "company": "Amazon",
+      "companyLogo": "/assets/companies/amazon.png",
+      "batch": "2022-23 Batch"
+    },
+    {
+      "id": 3,
+      "name": "Rahul Sharma",
+      "photo": "/assets/students/student3.jpg",
+      "company": "Google",
+      "companyLogo": "/assets/companies/google.png",
+      "batch": "2021-22 Batch"
+    },
+    {
+      "id": 4,
+      "name": "Anjali Patel",
+      "photo": "/assets/students/student4.jpg",
+      "company": "Adobe",
+      "companyLogo": "/assets/companies/adobe.png",
+      "batch": "2022-23 Batch"
+    },
+    {
+      "id": 5,
+      "name": "Vikram Mehta",
+      "photo": "/assets/students/student5.jpg",
+      "company": "IBM",
+      "companyLogo": "/assets/companies/ibm.png",
+      "batch": "2021-22 Batch"
+    },
+    {
+      "id": 6,
+      "name": "Sneha Reddy",
+      "photo": "/assets/students/student6.jpg",
+      "company": "Wipro",
+      "companyLogo": "/assets/companies/wipro.png",
+      "batch": "2022-23 Batch"
+    },
+    {
+      "id": 7,
+      "name": "Rajat Verma",
+      "photo": "/assets/students/student7.jpg",
+      "company": "Infosys",
+      "companyLogo": "/assets/companies/infosys.png",
+      "batch": "2021-22 Batch"
+    },
+    {
+      "id": 8,
+      "name": "Aisha Khan",
+      "photo": "/assets/students/student8.jpg",
+      "company": "TCS",
+      "companyLogo": "/assets/companies/tcs.png",
+      "batch": "2022-23 Batch"
+    },
+    {
+      "id": 9,
+      "name": "Karthik Reddy",
+      "photo": "/assets/students/student9.jpg",
+      "company": "Cognizant",
+      "companyLogo": "/assets/companies/cognizant.png",
+      "batch": "2021-22 Batch"
+    },
+    {
+      "id": 10,
+      "name": "Meera Desai",
+      "photo": "/assets/students/student10.jpg",
+      "company": "Accenture",
+      "companyLogo": "/assets/companies/accenture.png",
+      "batch": "2022-23 Batch"
+    }
+  ],
+  "historicalYears": [
+    {
+      "year": "2022-23",
+      "image": "/assets/placements/batch2022.jpg",
+      "summary": "The 2022-23 batch achieved a placement rate of 92% with 35 students placed in top companies including Google, Microsoft, Amazon, and IBM. The average salary package was 8.5 LPA, with the highest being 24 LPA. Students were placed in roles like Software Engineer, Data Analyst, Cloud Architect, and UX Designer."
+    },
+    {
+      "year": "2021-22",
+      "image": "/assets/placements/batch2021.jpg",
+      "summary": "The 2021-22 batch achieved a placement rate of 88% with 32 students placed across various sectors. Major recruiters included TCS, Infosys, Wipro, and Accenture. The average salary package was 7.2 LPA, with the highest being 18 LPA. Despite pandemic challenges, our students secured excellent opportunities in both service and product-based companies."
+    },
+    {
+      "year": "2020-21",
+      "image": "/assets/placements/batch2020.jpg",
+      "summary": "The 2020-21 batch had a placement rate of 86% despite pandemic challenges. 30 students were placed in companies like Cognizant, HCL, Tech Mahindra, and startups. The average salary package was 6.8 LPA, with the highest being 15 LPA. Most students were placed in software development and IT support roles."
+    },
+    {
+      "year": "2019-20",
+      "image": "/assets/placements/batch2019.jpg",
+      "summary": "The 2019-20 batch achieved a placement rate of 90% with 33 students finding positions in leading technology companies. The average salary package was 7.0 LPA, with the highest being 16 LPA. Key recruiters included Adobe, Oracle, Capgemini, and Deloitte. Students secured roles in diverse domains including AI, cloud computing, and cybersecurity."
+    },
+    {
+      "year": "2018-19",
+      "image": "/assets/placements/batch2018.jpg",
+      "summary": "The 2018-19 batch saw an impressive placement rate of 92% with 34 students placed across IT and non-IT sectors. The average salary package was 6.5 LPA, with the highest being 15 LPA. Major recruiters included Amazon, Flipkart, MakeMyTrip, and Mindtree. Several students also received multiple offers, demonstrating the high demand for our graduates."
+    },
+    {
+      "year": "2017-18",
+      "image": "/assets/placements/batch2017.jpg",
+      "summary": "The 2017-18 batch achieved a placement rate of 85% with 28 students securing positions in both established companies and emerging startups. The average salary package was 6.0 LPA, with the highest being 14 LPA. Students were placed in roles like full-stack development, mobile app development, and data science."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+
+{
+  "labs": [
+    {
+      "id": 1,
+      "name": "Programming Lab",
+      "image": "/assets/labs/lab1.jpg",
+      "description": "Equipped with high-performance computers loaded with the latest development environments and programming tools for students to practice coding and problem-solving."
+    },
+    {
+      "id": 2,
+      "name": "Network Lab",
+      "image": "/assets/labs/lab2.jpg",
+      "description": "Features Cisco routers, switches, and network simulation software to help students understand network architectures, protocols, and configurations."
+    },
+    {
+      "id": 3,
+      "name": "Research Lab",
+      "image": "/assets/labs/lab3.jpg",
+      "description": "Advanced computing facilities for research in areas like artificial intelligence, machine learning, big data analytics, and cloud computing."
+    }
+  ],
+  "technicalStaff": [
+    {
+      "id": 1,
+      "name": "Robert Davis",
+      "photo": "/assets/technical-staff/staff1.jpg",
+      "designation": "Senior Lab Technical Officer",
+      "email": "robert.davis@college.edu"
+    },
+    {
+      "id": 2,
+      "name": "Anita Gupta",
+      "photo": "/assets/technical-staff/staff2.jpg",
+      "designation": "Lab Technician",
+      "email": "anita.gupta@college.edu"
+    },
+    {
+      "id": 3,
+      "name": "David Wong",
+      "photo": "/assets/technical-staff/staff3.jpg",
+      "designation": "Technical Assistant",
+      "email": "david.wong@college.edu"
+    },
+    {
+      "id": 4,
+      "name": "Maria Rodriguez",
+      "photo": "/assets/technical-staff/staff4.jpg",
+      "designation": "Systems Administrator",
+      "email": "maria.rodriguez@college.edu"
+    },
+    {
+      "id": 5,
+      "name": "Steven Chen",
+      "photo": "/assets/technical-staff/staff5.jpg",
+      "designation": "Network Technician",
+      "email": "steven.chen@college.edu"
+    },
+    {
+      "id": 6,
+      "name": "Julia Kim",
+      "photo": "/assets/technical-staff/staff6.jpg",
+      "designation": "Hardware Specialist",
+      "email": "julia.kim@college.edu"
+    },
+    {
+      "id": 7,
+      "name": "Ahmed Hassan",
+      "photo": "/assets/technical-staff/staff7.jpg",
+      "designation": "Technical Support Officer",
+      "email": "ahmed.hassan@college.edu"
+    }
+  ]
+}

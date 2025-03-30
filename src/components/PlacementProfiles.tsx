@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import departmentData from "@/data/departmentData.json";
+import placementData from "@/data/placementData.json";
 
 interface PlacedStudent {
   id: number;
@@ -14,41 +14,10 @@ interface PlacedStudent {
   batch: string;
 }
 
-const placedStudents: PlacedStudent[] = departmentData.placedStudents;
-
-const StudentProfile = ({ student }: { student: PlacedStudent }) => {
-  return (
-    <Card className="h-full bg-white border-0 rounded-md shadow-md">
-      <CardContent className="p-6 flex flex-col items-center text-center">
-        <Avatar className="w-24 h-24 border-2 border-cse-accent mb-4">
-          <AvatarImage src={student.photo} alt={student.name} className="object-cover" />
-          <AvatarFallback>{student.name.charAt(0)}</AvatarFallback>
-        </Avatar>
-        
-        <h3 className="text-xl font-bold mb-1 text-gray-800">{student.name}</h3>
-        <p className="text-gray-500 mb-4">{student.batch}</p>
-        
-        {student.companyLogo ? (
-          <div className="mt-auto h-12 flex items-center justify-center">
-            <img 
-              src={student.companyLogo} 
-              alt={`${student.company} logo`} 
-              className="max-h-10 max-w-[120px] object-contain" 
-            />
-          </div>
-        ) : (
-          <div className="mt-auto">
-            <p className="font-medium text-gray-700">{student.company}</p>
-          </div>
-        )}
-      </CardContent>
-    </Card>
-  );
-};
-
 const PlacementProfiles = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const profilesPerPage = 3;
+  const placedStudents = placementData.recentPlacements;
   const totalPages = Math.ceil(placedStudents.length / profilesPerPage);
 
   useEffect(() => {
@@ -101,6 +70,36 @@ const PlacementProfiles = () => {
         </div>
       </div>
     </section>
+  );
+};
+
+const StudentProfile = ({ student }: { student: PlacedStudent }) => {
+  return (
+    <Card className="h-full bg-white border-0 rounded-md shadow-md">
+      <CardContent className="p-6 flex flex-col items-center text-center">
+        <Avatar className="w-24 h-24 border-2 border-cse-accent mb-4">
+          <AvatarImage src={student.photo} alt={student.name} className="object-cover" />
+          <AvatarFallback>{student.name.charAt(0)}</AvatarFallback>
+        </Avatar>
+        
+        <h3 className="text-xl font-bold mb-1 text-gray-800">{student.name}</h3>
+        <p className="text-gray-500 mb-4">{student.batch}</p>
+        
+        {student.companyLogo ? (
+          <div className="mt-auto h-12 flex items-center justify-center">
+            <img 
+              src={student.companyLogo} 
+              alt={`${student.company} logo`} 
+              className="max-h-10 max-w-[120px] object-contain" 
+            />
+          </div>
+        ) : (
+          <div className="mt-auto">
+            <p className="font-medium text-gray-700">{student.company}</p>
+          </div>
+        )}
+      </CardContent>
+    </Card>
   );
 };
 

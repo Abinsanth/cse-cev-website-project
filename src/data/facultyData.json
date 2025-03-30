@@ -1,0 +1,509 @@
+
+{
+  "faculty": [
+    {
+      "id": 1,
+      "name": "Dr. Sarah Johnson",
+      "photo": "/assets/faculty/faculty1.jpg",
+      "designation": "Professor & Head of Department",
+      "email": "sarah.johnson@college.edu",
+      "qualification": "Ph.D. in Computer Science, Stanford University",
+      "experience": "15+ years of teaching and research experience in leading institutions",
+      "interests": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Data Science",
+        "Neural Networks"
+      ],
+      "publications": [
+        "Johnson, S. et al. (2022). 'Advanced Neural Networks for Image Recognition', IEEE Transactions on AI",
+        "Johnson, S. & Kumar, R. (2020). 'Deep Learning Approaches in Healthcare', Journal of Medical Informatics"
+      ],
+      "research": [
+        "Principal Investigator, 'AI in Healthcare' - funded by National Science Foundation",
+        "Co-Investigator, 'Smart City Solutions' - funded by Department of Science & Technology"
+      ],
+      "responsibilities": [
+        "Head of Department, Computer Science & Engineering",
+        "Member, Academic Council",
+        "Chairperson, Research Committee"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Dr. Michael Chen",
+      "photo": "/assets/faculty/faculty2.jpg",
+      "designation": "Associate Professor",
+      "email": "michael.chen@college.edu",
+      "qualification": "Ph.D. in Information Security, MIT",
+      "experience": "12 years in academia and 5 years in industry as a security consultant",
+      "interests": [
+        "Cybersecurity",
+        "Network Security",
+        "Cryptography",
+        "Blockchain Technology"
+      ],
+      "publications": [
+        "Chen, M. & Singh, V. (2021). 'Blockchain-based Security for IoT Devices', International Journal of Cybersecurity",
+        "Chen, M. (2019). 'Advanced Encryption Standards for Mobile Applications', IEEE Security & Privacy"
+      ],
+      "research": [
+        "Lead Researcher, 'Secure IoT Framework' - funded by Industry Partners",
+        "Security Consultant for National Cybersecurity Initiative"
+      ],
+      "responsibilities": [
+        "Coordinator, Cybersecurity Research Lab",
+        "Member, Curriculum Development Committee"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Prof. Emily Rodriguez",
+      "photo": "/assets/faculty/faculty3.jpg",
+      "designation": "Assistant Professor",
+      "email": "emily.rodriguez@college.edu",
+      "qualification": "M.Tech in Computer Science, Georgia Tech, Ph.D. (pursuing)",
+      "experience": "8 years of teaching experience and 3 years as a software developer",
+      "interests": [
+        "Web Technologies",
+        "Mobile Application Development",
+        "User Experience Design",
+        "Cloud Computing"
+      ],
+      "publications": [
+        "Rodriguez, E. & Johnson, T. (2022). 'User Experience in Mobile Applications', ACM Transactions on CHI",
+        "Rodriguez, E. (2020). 'Cloud-Native Application Architecture', Journal of Cloud Computing"
+      ],
+      "research": [
+        "Project Lead, 'Multi-platform Mobile Application Framework'"
+      ],
+      "responsibilities": [
+        "Faculty Advisor, Mobile App Development Club",
+        "Coordinator, Industry Connect Program"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Dr. James Wilson",
+      "photo": "/assets/faculty/faculty4.jpg",
+      "designation": "Associate Professor",
+      "email": "james.wilson@college.edu",
+      "qualification": "Ph.D. in Data Science, University of California, Berkeley",
+      "experience": "10 years of teaching and research experience in data analytics",
+      "interests": [
+        "Big Data Analytics",
+        "Statistical Modeling",
+        "Data Visualization",
+        "Predictive Analytics"
+      ],
+      "publications": [
+        "Wilson, J. & Brown, A. (2021). 'Big Data Analytics in Healthcare', Data Science Journal",
+        "Wilson, J. (2019). 'Predictive Models for Financial Markets', Journal of Computational Finance"
+      ],
+      "research": [
+        "Data Analytics Consultant for Healthcare Systems",
+        "Lead Researcher, 'Predictive Analytics for Urban Planning'"
+      ],
+      "responsibilities": [
+        "Coordinator, Data Science Lab",
+        "Member, Research Ethics Committee"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Dr. Ananya Patel",
+      "photo": "/assets/faculty/faculty5.jpg",
+      "designation": "Associate Professor",
+      "email": "ananya.patel@college.edu",
+      "qualification": "Ph.D. in Computer Networks, ETH Zurich",
+      "experience": "11 years of research and teaching in advanced networks",
+      "interests": [
+        "Computer Networks",
+        "Internet of Things",
+        "5G Technologies",
+        "Network Security"
+      ],
+      "publications": [
+        "Patel, A. et al. (2022). 'Next-generation IoT Networks', IEEE Network",
+        "Patel, A. & Lee, K. (2020). 'Security Protocols for 5G Networks', Communications Magazine"
+      ],
+      "research": [
+        "Principal Investigator, 'Smart Home Networking Solutions'",
+        "Research Consultant for Telecom Industry"
+      ],
+      "responsibilities": [
+        "Coordinator, Network Research Lab",
+        "Member, Faculty Recruitment Committee"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Prof. Robert Kim",
+      "photo": "/assets/faculty/faculty6.jpg",
+      "designation": "Assistant Professor",
+      "email": "robert.kim@college.edu",
+      "qualification": "M.S. in Software Engineering, Carnegie Mellon University",
+      "experience": "5 years in academia and 7 years in leading tech companies",
+      "interests": [
+        "Software Engineering",
+        "DevOps",
+        "Microservices Architecture",
+        "Agile Methodologies"
+      ],
+      "publications": [
+        "Kim, R. & Davis, L. (2021). 'Microservices vs. Monolithic Architecture', IEEE Software",
+        "Kim, R. (2019). 'Continuous Integration Best Practices', Journal of Software Engineering"
+      ],
+      "research": [
+        "Project Lead, 'Automated Testing Frameworks'"
+      ],
+      "responsibilities": [
+        "Industry Liaison Officer",
+        "Coordinator, Software Development Workshop"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Dr. Maya Gupta",
+      "photo": "/assets/faculty/faculty7.jpg",
+      "designation": "Associate Professor",
+      "email": "maya.gupta@college.edu",
+      "qualification": "Ph.D. in Artificial Intelligence, University of Toronto",
+      "experience": "9 years of research and teaching in AI and robotics",
+      "interests": [
+        "Robotics",
+        "Computer Vision",
+        "Natural Language Processing",
+        "AI Ethics"
+      ],
+      "publications": [
+        "Gupta, M. & Wang, H. (2022). 'Ethical Considerations in AI Systems', AI Ethics Journal",
+        "Gupta, M. (2020). 'Vision-based Navigation for Autonomous Robots', Robotics and Automation Letters"
+      ],
+      "research": [
+        "Lead Researcher, 'Ethical AI Framework'",
+        "Co-Investigator, 'Robotic Assistance Systems for Healthcare'"
+      ],
+      "responsibilities": [
+        "Coordinator, AI & Robotics Lab",
+        "Faculty Advisor, Robotics Club"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Prof. David Martinez",
+      "photo": "/assets/faculty/faculty8.jpg",
+      "designation": "Assistant Professor",
+      "email": "david.martinez@college.edu",
+      "qualification": "M.Tech in Cloud Computing, ETH Zurich",
+      "experience": "6 years in academia and 5 years as a cloud solutions architect",
+      "interests": [
+        "Cloud Computing",
+        "Distributed Systems",
+        "Serverless Architecture",
+        "Containerization"
+      ],
+      "publications": [
+        "Martinez, D. & Patel, S. (2022). 'Serverless Computing: Challenges and Opportunities', Cloud Computing Journal",
+        "Martinez, D. (2021). 'Docker and Kubernetes in Education', IEEE Education"
+      ],
+      "research": [
+        "Project Lead, 'Cloud-based Learning Environments'"
+      ],
+      "responsibilities": [
+        "Coordinator, Cloud Computing Lab",
+        "Technical Advisor, IT Infrastructure Committee"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Dr. Lisa Wong",
+      "photo": "/assets/faculty/faculty9.jpg",
+      "designation": "Professor",
+      "email": "lisa.wong@college.edu",
+      "qualification": "Ph.D. in Human-Computer Interaction, Carnegie Mellon University",
+      "experience": "14 years of research and teaching in HCI and UX design",
+      "interests": [
+        "Human-Computer Interaction",
+        "User Experience Design",
+        "Accessibility",
+        "Cognitive Computing"
+      ],
+      "publications": [
+        "Wong, L. et al. (2022). 'Accessible Design for Mobile Applications', ACM Transactions on Accessible Computing",
+        "Wong, L. & Johnson, S. (2020). 'Cognitive Computing in Education', IEEE Computer"
+      ],
+      "research": [
+        "Principal Investigator, 'Universal Accessibility Project'",
+        "Research Director, 'Cognitive Computing Laboratory'"
+      ],
+      "responsibilities": [
+        "Chair, UX Research Group",
+        "Member, Academic Senate"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Prof. Sam Thompson",
+      "photo": "/assets/faculty/faculty10.jpg",
+      "designation": "Assistant Professor",
+      "email": "sam.thompson@college.edu",
+      "qualification": "M.S. in Game Development, University of Southern California",
+      "experience": "7 years in academia and 6 years in game development industry",
+      "interests": [
+        "Game Development",
+        "Virtual Reality",
+        "Augmented Reality",
+        "Interactive Media"
+      ],
+      "publications": [
+        "Thompson, S. & Chen, M. (2022). 'Educational VR Applications', IEEE Virtual Reality Conference",
+        "Thompson, S. (2021). 'Game Design Patterns for Learning', International Journal of Game-Based Learning"
+      ],
+      "research": [
+        "Lead Designer, 'VR for Healthcare Training'"
+      ],
+      "responsibilities": [
+        "Coordinator, Game Development Lab",
+        "Faculty Advisor, Game Development Club"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Dr. Raj Kumar",
+      "photo": "/assets/faculty/faculty11.jpg",
+      "designation": "Professor",
+      "email": "raj.kumar@college.edu",
+      "qualification": "Ph.D. in Operating Systems, University of California, Berkeley",
+      "experience": "16 years of research and teaching in systems programming",
+      "interests": [
+        "Operating Systems",
+        "Systems Programming",
+        "Parallel Computing",
+        "High-Performance Computing"
+      ],
+      "publications": [
+        "Kumar, R. et al. (2021). 'Optimization Techniques for Parallel Computing', Journal of Parallel and Distributed Computing",
+        "Kumar, R. & Lee, J. (2019). 'Real-time Operating Systems for IoT', IEEE Systems Journal"
+      ],
+      "research": [
+        "Principal Investigator, 'High-Performance Computing Cluster'",
+        "Research Director, 'Embedded Systems Laboratory'"
+      ],
+      "responsibilities": [
+        "Director, Systems Research Center",
+        "Member, Research & Development Committee"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Prof. Elena Volkova",
+      "photo": "/assets/faculty/faculty12.jpg",
+      "designation": "Associate Professor",
+      "email": "elena.volkova@college.edu",
+      "qualification": "Ph.D. in Quantum Computing, University of Oxford",
+      "experience": "10 years of research in quantum computing and algorithms",
+      "interests": [
+        "Quantum Computing",
+        "Quantum Algorithms",
+        "Theoretical Computer Science",
+        "Cryptography"
+      ],
+      "publications": [
+        "Volkova, E. & Smith, J. (2022). 'Quantum Algorithms for Optimization Problems', Quantum Information Processing",
+        "Volkova, E. (2020). 'Post-Quantum Cryptography Methods', Journal of Cryptography"
+      ],
+      "research": [
+        "Lead Researcher, 'Quantum Computing Applications'"
+      ],
+      "responsibilities": [
+        "Coordinator, Quantum Computing Research Group",
+        "Member, Graduate Studies Committee"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Dr. John Smith",
+      "photo": "/assets/faculty/faculty13.jpg",
+      "designation": "Associate Professor",
+      "email": "john.smith@college.edu",
+      "qualification": "Ph.D. in Database Systems, Stanford University",
+      "experience": "11 years of research and teaching in database management systems",
+      "interests": [
+        "Database Systems",
+        "Data Warehousing",
+        "NoSQL Databases",
+        "Query Optimization"
+      ],
+      "publications": [
+        "Smith, J. & Wang, L. (2021). 'Query Optimization for Large-Scale Databases', ACM Transactions on Database Systems",
+        "Smith, J. (2019). 'NoSQL vs. Relational Databases: Performance Analysis', Journal of Database Management"
+      ],
+      "research": [
+        "Principal Investigator, 'Distributed Database Systems'"
+      ],
+      "responsibilities": [
+        "Coordinator, Database Research Lab",
+        "Member, Library Committee"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Prof. Olivia Garcia",
+      "photo": "/assets/faculty/faculty14.jpg",
+      "designation": "Assistant Professor",
+      "email": "olivia.garcia@college.edu",
+      "qualification": "M.Tech in Computer Graphics, Georgia Tech",
+      "experience": "7 years in academia and 4 years in computer graphics industry",
+      "interests": [
+        "Computer Graphics",
+        "Visual Computing",
+        "Animation",
+        "3D Modeling"
+      ],
+      "publications": [
+        "Garcia, O. & Lee, H. (2022). 'Real-time Rendering Techniques', Computer Graphics Forum",
+        "Garcia, O. (2020). '3D Animation in Medical Visualization', Journal of Visual Communication"
+      ],
+      "research": [
+        "Project Lead, 'Medical Visualization Systems'"
+      ],
+      "responsibilities": [
+        "Coordinator, Graphics Lab",
+        "Faculty Advisor, Animation Club"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Dr. Thomas Williams",
+      "photo": "/assets/faculty/faculty15.jpg",
+      "designation": "Professor",
+      "email": "thomas.williams@college.edu",
+      "qualification": "Ph.D. in Software Engineering, University of Cambridge",
+      "experience": "18 years of research and teaching in software engineering methodologies",
+      "interests": [
+        "Software Engineering",
+        "Requirements Engineering",
+        "Software Testing",
+        "Software Metrics"
+      ],
+      "publications": [
+        "Williams, T. et al. (2022). 'Automated Software Testing Frameworks', IEEE Transactions on Software Engineering",
+        "Williams, T. & Kumar, A. (2019). 'Requirements Engineering for Large-Scale Systems', Requirements Engineering Journal"
+      ],
+      "research": [
+        "Principal Investigator, 'Software Quality Assurance Methods'",
+        "Research Director, 'Software Engineering Laboratory'"
+      ],
+      "responsibilities": [
+        "Chair, Software Engineering Program",
+        "Member, Academic Standards Committee"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Prof. Aisha Khan",
+      "photo": "/assets/faculty/faculty16.jpg",
+      "designation": "Assistant Professor",
+      "email": "aisha.khan@college.edu",
+      "qualification": "M.S. in Information Systems, London School of Economics",
+      "experience": "5 years in academia and 6 years as an IT consultant",
+      "interests": [
+        "Information Systems",
+        "IT Project Management",
+        "Business Intelligence",
+        "Enterprise Architecture"
+      ],
+      "publications": [
+        "Khan, A. & Lee, M. (2022). 'IT Project Management in Healthcare', International Journal of Project Management",
+        "Khan, A. (2021). 'Business Intelligence for Small Enterprises', Journal of Information Systems"
+      ],
+      "research": [
+        "Project Lead, 'Enterprise Systems Integration'"
+      ],
+      "responsibilities": [
+        "Coordinator, IT Management Program",
+        "Faculty Advisor, Entrepreneurship Club"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Dr. Wei Zhang",
+      "photo": "/assets/faculty/faculty17.jpg",
+      "designation": "Associate Professor",
+      "email": "wei.zhang@college.edu",
+      "qualification": "Ph.D. in Natural Language Processing, University of Edinburgh",
+      "experience": "9 years of research and teaching in computational linguistics",
+      "interests": [
+        "Natural Language Processing",
+        "Computational Linguistics",
+        "Machine Translation",
+        "Text Mining"
+      ],
+      "publications": [
+        "Zhang, W. & Brown, J. (2022). 'Transformer Models for Low-Resource Languages', Computational Linguistics Journal",
+        "Zhang, W. (2020). 'Neural Machine Translation Systems', ACL Transactions"
+      ],
+      "research": [
+        "Lead Researcher, 'Multilingual NLP Systems'"
+      ],
+      "responsibilities": [
+        "Coordinator, NLP Research Group",
+        "Member, International Relations Committee"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Prof. Carlos Fernandez",
+      "photo": "/assets/faculty/faculty18.jpg",
+      "designation": "Assistant Professor",
+      "email": "carlos.fernandez@college.edu",
+      "qualification": "M.Tech in Computer Architecture, University of Barcelona",
+      "experience": "6 years in academia and 5 years in processor design industry",
+      "interests": [
+        "Computer Architecture",
+        "Embedded Systems",
+        "VLSI Design",
+        "Low-Power Computing"
+      ],
+      "publications": [
+        "Fernandez, C. & Kumar, S. (2021). 'Low-Power Processor Designs', IEEE Transactions on VLSI Systems",
+        "Fernandez, C. (2019). 'Embedded Systems for IoT Applications', Journal of Systems Architecture"
+      ],
+      "research": [
+        "Project Lead, 'Energy-Efficient Computing'"
+      ],
+      "responsibilities": [
+        "Coordinator, Computer Architecture Lab",
+        "Faculty Advisor, Hardware Design Club"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Dr. Nina Sharma",
+      "photo": "/assets/faculty/faculty19.jpg",
+      "designation": "Professor",
+      "email": "nina.sharma@college.edu",
+      "qualification": "Ph.D. in Theoretical Computer Science, MIT",
+      "experience": "16 years of research and teaching in algorithms and complexity theory",
+      "interests": [
+        "Algorithms",
+        "Computational Complexity",
+        "Graph Theory",
+        "Combinatorial Optimization"
+      ],
+      "publications": [
+        "Sharma, N. et al. (2022). 'Approximation Algorithms for NP-Hard Problems', Journal of Algorithms",
+        "Sharma, N. & Lee, W. (2020). 'Complexity Analysis of Machine Learning Algorithms', Theoretical Computer Science"
+      ],
+      "research": [
+        "Principal Investigator, 'Algorithm Design and Analysis'",
+        "Research Director, 'Theoretical Computer Science Laboratory'"
+      ],
+      "responsibilities": [
+        "Chair, Theoretical Computer Science Group",
+        "Member, University Research Council"
+      ]
+    }
+  ]
+}
