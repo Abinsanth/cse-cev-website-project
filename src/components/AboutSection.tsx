@@ -1,12 +1,15 @@
 
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Calendar, MapPin } from "lucide-react";
-import alumniData from "@/data/alumniData.json";
+import { Calendar, MapPin, X } from "lucide-react";
+import departmentData from "@/data/departmentData.json";
+import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog";
 
 const AboutSection = () => {
   // Display only 3 recent events on the home page
-  const recentEvents = alumniData.events.slice(0, 3);
+  const recentEvents = departmentData.events.slice(0, 3);
+  const [selectedEvent, setSelectedEvent] = useState<(typeof departmentData.events)[0] | null>(null);
 
   return (
     <section className="py-20 bg-white">
@@ -22,18 +25,21 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <h3 className="text-2xl font-bold mb-4 text-cse">Our Vision</h3>
-            <p className="text-gray-700 mb-6">
-              To become a center of excellence in Computer Science and Engineering education, 
-              producing competent professionals with sound technical knowledge, ethical values, 
-              and a commitment to serve society through innovation.
+            <p className="text-gray-700 mb-6 ">
+              To produce competent Software Professionals that are capable of analyzing 
+              organizational problems, design, formulate and evaluate, develop and maintain 
+              technological solutions for the betterment of the global economy.
             </p>
             
             <h3 className="text-2xl font-bold mb-4 text-cse">Our Mission</h3>
-            <ul className="list-disc list-inside text-gray-700 space-y-2 mb-6">
-              <li>To provide quality education incorporating the latest technological advancements</li>
-              <li>To cultivate research aptitude among students and faculty</li>
-              <li>To develop industry-ready professionals with strong technical and soft skills</li>
-              <li>To foster entrepreneurship and innovation in computing technologies</li>
+            <ul className="list-disc list-outside pl-5 text-gray-700 space-y-2 mb-6">
+              <li>Upgrading the existing software and hardware facilities in the computer centers and laboratories to match the outcomes of the programs offered.</li>
+              <li>Organize need based faculty and staff development programs and encourage faculty to participate in national and international conferences. Encourage faculty to organize frequent departmental seminars and use class room seminar methods to improve abilities of the students.</li>
+              <li> Sponsor faculty and staff on study leave to upgrade their qualification.</li>
+              <li>Explore opportunities for development and assessment of Graduate Attributes in the co-curricular and extracurricular activities.</li>
+              <li>To mould the students by inculcating the professional ethics.</li>
+              <li>To prepare graduates for leadership in profession and in higher education</li>
+              <li>To prepare graduates for leadership in profession and in higher education</li>
             </ul>
             
             <Link to="/about">
@@ -45,7 +51,7 @@ const AboutSection = () => {
           
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" 
+              src="/assets/cev/CEV6.jpg" 
               alt="Computer Science Students" 
               className="rounded-lg shadow-xl w-full h-auto object-cover"
             />
@@ -58,11 +64,15 @@ const AboutSection = () => {
           <h3 className="text-2xl font-bold mb-8 text-center text-cse">Recent Events</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {recentEvents.map((event) => (
-              <div key={event.id} className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
+              <div 
+                key={event.id} 
+                className="bg-white rounded-lg shadow-md overflow-hidden card-hover cursor-pointer"
+                onClick={() => setSelectedEvent(event)}
+              >
                 <img 
                   src={event.image} 
                   alt={event.title} 
-                  className="w-full h-48 object-cover"
+                  className="w-full h-48 object-cover bg-white"
                 />
                 <div className="p-6">
                   <h4 className="text-lg font-semibold mb-3">{event.title}</h4>
@@ -86,6 +96,34 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Event Detail Dialog */}
+      <Dialog open={!!selectedEvent} onOpenChange={(open) => !open && setSelectedEvent(null)}>
+        <DialogContent className="sm:max-w-3xl p-0 overflow-hidden">
+          <div className="relative">
+            <img 
+              src={selectedEvent?.image}
+              alt={selectedEvent?.title} 
+              className="w-full h-64 object-contain"
+            />
+            <DialogClose className="absolute top-4 right-4 p-2 rounded-full bg-black/30 text-white hover:bg-black/50">
+              <X className="h-4 w-4" />
+            </DialogClose>
+          </div>
+          <div className="p-6">
+            <h3 className="text-2xl font-bold mb-4">{selectedEvent?.title}</h3>
+            <div className="flex items-center text-gray-600 mb-2">
+              <Calendar className="w-5 h-5 mr-2 text-cse-accent" />
+              <span>{selectedEvent?.date}</span>
+            </div>
+            <div className="flex items-center text-gray-600 mb-6">
+              <MapPin className="w-5 h-5 mr-2 text-cse-accent" />
+              <span>{selectedEvent?.location}</span>
+            </div>
+            
+          </div>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };

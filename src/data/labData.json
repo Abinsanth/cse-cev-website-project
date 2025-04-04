@@ -3,7 +3,7 @@
   "labs": [
     {
       "id": 1,
-      "name": "Programming Lab",
+      "name": "NOS Lab",
       "image": "/assets/labs/lab1.jpg",
       "description": "Equipped with high-performance computers loaded with the latest development environments and programming tools for students to practice coding and problem-solving."
     },
@@ -15,7 +15,7 @@
     },
     {
       "id": 3,
-      "name": "Research Lab",
+      "name": "Project Lab",
       "image": "/assets/labs/lab3.jpg",
       "description": "Advanced computing facilities for research in areas like artificial intelligence, machine learning, big data analytics, and cloud computing."
     }
@@ -23,52 +23,52 @@
   "technicalStaff": [
     {
       "id": 1,
-      "name": "Robert Davis",
+      "name": "Ms. Nithya S",
       "photo": "/assets/technical-staff/staff1.jpg",
-      "designation": "Senior Lab Technical Officer",
-      "email": "robert.davis@college.edu"
+      "designation": "Computer Programmer",
+      "email": "nithya.0509@gmail.com"
     },
     {
       "id": 2,
-      "name": "Anita Gupta",
+      "name": "Mr. Rejeesh K",
       "photo": "/assets/technical-staff/staff2.jpg",
-      "designation": "Lab Technician",
-      "email": "anita.gupta@college.edu"
+      "designation": "Instructor Gr.I",
+      "email": "reji2000@gmail.com"
     },
     {
       "id": 3,
-      "name": "David Wong",
+      "name": "Mr. Aneesh K P",
       "photo": "/assets/technical-staff/staff3.jpg",
-      "designation": "Technical Assistant",
-      "email": "david.wong@college.edu"
+      "designation": "Trade Instructor Gr.II",
+      "email": "aneeshappunni@gmail.com"
     },
     {
       "id": 4,
-      "name": "Maria Rodriguez",
+      "name": "Mr. Abdul Latheef T",
       "photo": "/assets/technical-staff/staff4.jpg",
-      "designation": "Systems Administrator",
-      "email": "maria.rodriguez@college.edu"
+      "designation": "Trade Instructor Gr.II",
+      "email": "latheefthekken@gmail.com"
     },
     {
       "id": 5,
-      "name": "Steven Chen",
+      "name": "Ms.Jumailathul Ramshana P",
       "photo": "/assets/technical-staff/staff5.jpg",
-      "designation": "Network Technician",
-      "email": "steven.chen@college.edu"
+      "designation": "Apprentice Trainee",
+      "email": " "
     },
     {
       "id": 6,
-      "name": "Julia Kim",
+      "name": "Mr. Salil E",
       "photo": "/assets/technical-staff/staff6.jpg",
-      "designation": "Hardware Specialist",
-      "email": "julia.kim@college.edu"
+      "designation": "Tradesman",
+      "email": "salilnair@cev.ac.in"
     },
     {
       "id": 7,
-      "name": "Ahmed Hassan",
+      "name": "Mr. Hayan Jyothi",
       "photo": "/assets/technical-staff/staff7.jpg",
-      "designation": "Technical Support Officer",
-      "email": "ahmed.hassan@college.edu"
+      "designation": "Apprentice Trainee",
+      "email": " "
     }
   ]
 }

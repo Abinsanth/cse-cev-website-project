@@ -1,6 +1,5 @@
 
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import alumniData from "@/data/alumniData.json";
 
 const Alumni = () => {
@@ -50,57 +49,6 @@ const Alumni = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Alumni Network */}
-        <div className="mt-20 bg-gray-50 p-8 rounded-lg shadow-md">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-cse">Join Our Alumni Network</h2>
-            <p className="max-w-2xl mx-auto mt-4 text-gray-600">
-              We value our alumni and want to stay connected with you. Join our alumni network to:
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="w-12 h-12 bg-cse-accent/20 rounded-full flex items-center justify-center mb-4">
-                <span className="text-2xl font-bold text-cse-accent">1</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Stay Connected</h3>
-              <p className="text-gray-600">
-                Keep in touch with your classmates, faculty, and the department through regular updates.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="w-12 h-12 bg-cse-accent/20 rounded-full flex items-center justify-center mb-4">
-                <span className="text-2xl font-bold text-cse-accent">2</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Mentorship Programs</h3>
-              <p className="text-gray-600">
-                Share your knowledge and experience with current students through mentorship programs.
-              </p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <div className="w-12 h-12 bg-cse-accent/20 rounded-full flex items-center justify-center mb-4">
-                <span className="text-2xl font-bold text-cse-accent">3</span>
-              </div>
-              <h3 className="text-xl font-semibold mb-2">Networking Opportunities</h3>
-              <p className="text-gray-600">
-                Connect with fellow alumni for professional networking and collaboration opportunities.
-              </p>
-            </div>
-          </div>
-          
-          <div className="text-center mt-8">
-            <Link 
-              to="/alumni/register" 
-              className="inline-block bg-cse hover:bg-cse-light text-white font-medium px-6 py-3 rounded-md transition-colors"
-            >
-              Register with Alumni Network
-            </Link>
-          </div>
         </div>
       </div>
     </main>

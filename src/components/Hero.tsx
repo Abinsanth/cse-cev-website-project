@@ -16,26 +16,29 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=2000&q=80" 
+          src="/assets/cev/CEV2.jpg" 
           alt="Department Building" 
           className="w-full h-full object-cover"
         />
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black opacity-60"></div>
+        <div className="absolute inset-0 bg-black opacity-65"></div>
       </div>
       
       {/* Content */}
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
+      
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white text-center">
             <span className="block">Department of</span>
-            <span className="block bg-clip-text text-transparent bg-gradient-to-r from-white to-cse-accent">
+            <span className=" bg-clip-text text-transparent bg-gradient-to-r from-white to-cse-accent pb-1">
               Computer Science & Engineering
             </span>
           </h1>
+          
           <p className="mt-6 text-xl text-white max-w-2xl mx-auto">
-            Nurturing future tech leaders with cutting-edge education, research opportunities, 
-            and industry-relevant skills at College of Engineering Vadakara.
+            To produce competent Software Professionals that are capable of 
+            analyzing organizational problems, design, formulate and evaluate, 
+            develop and maintain technological solutions for the betterment of the global economy.
           </p>
           <div className="mt-10 flex gap-4 justify-center">
             <Link to="/about">

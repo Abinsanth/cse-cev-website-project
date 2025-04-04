@@ -1,168 +1,187 @@
 
 {
-  "faculty": [
+  "events": [
     {
       "id": 1,
-      "name": "Dr. Sarah Johnson",
-      "photo": "/assets/faculty/faculty1.jpg",
-      "designation": "Professor & Head of Department"
+      "title": "COLLEGE DAY",
+      "date": "April 03, 2025",
+      "location": "Centroid",
+      "image": "/assets/events/college_day.jpg"
     },
     {
       "id": 2,
-      "name": "Dr. Michael Chen",
-      "photo": "/assets/faculty/faculty2.jpg",
-      "designation": "Associate Professor"
+      "title": "UI DESIGN HACKATHON",
+      "date": "March 28, 2025",
+      "location": "ASAP Hall",
+      "image": "/assets/events/design.jpg"
     },
     {
       "id": 3,
-      "name": "Prof. Emily Rodriguez",
-      "photo": "/assets/faculty/faculty3.jpg",
-      "designation": "Assistant Professor"
+      "title": "TECH AURA",
+      "date": "March 28, 2025",
+      "location": "ECE Block",
+      "image": "/assets/events/tech_aura.jpg"
+    }
+  ],
+  
+  "pastEvents" : [
+    {
+      "title": "UI/UX Design Hackathon",
+      "date": "March 28, 2025",
+      "location": "Main Auditorium",
+      "description": "Are you ready to push the boundaries of design and innovation? Join the UI/UX Design Hackathon, organized by Students Union CEV, where creativity meets problem-solving!.",
+      "image": "/assets/events/design.jpg"
+    },
+    {
+      "title": "A Quick Fireside Chat with Ananya R",
+      "date": "March 17, 2025",
+      "location": "Google Meet",
+      "description": "Join Ananya R - TEDx Speaker, DEI Advocate & Former Google DevRel Community Manager - for an unfiltered, high-energy talk on leadership, diversity & breaking barriers!.",
+      "image": "/assets/events/fireside.jpg"
+    },
+    {
+      "title": "Industry-Academia Meet",
+      "date": "August 22, 2024",
+      "location": "Seminar Hall",
+      "description": "STUDENTS UNION and IEDC CEV organized a program empowering women entrepreneurs, featuring inspiring success stories, strategies for overcoming challenges, and mentorship opportunities.",
+      "image": "/assets/events/women_emp.jpg"
+    },
+    {
+      "title": "Bug Bounty",
+      "date": "April 19, 2024",
+      "location": "ASAP Hall",
+      "description": "CS Association conducted a Bug Bounty workshop in collaboration with Redteam Hacker Academy, Kozhikode, as part of Quasso Liberum Technical Fest at College of Engineering Vadakara.",
+      "image": "/assets/events/bug_bounty.jpg"
+    },
+    {
+      "title": "Talk Session",
+      "date": "February 27, 2024",
+      "location": "Mini Auditorium",
+      "description": "Career talk session by Hafis C P, providing insights into job opportunities, emerging tech trends, and career growth in the IT sector.",
+      "image": "/assets/events/talk_session.jpg"
+    },
+    {
+      "title": "Association Day",
+      "date": "February 17, 2024",
+      "location": "Mini Auditorium",
+      "description": "CS Association Day celebration featuring tech talks, workshops, and interactive sessions on emerging trends in computing.",
+      "image": "/assets/events/poster.jpg"
+    },
+    {
+      "title": "Web Development Workshop",
+      "date": "June 15, 2022",
+      "location": "Lab 2",
+      "description": "An interactive workshop on modern web development technologies and frameworks.",
+      "image": "https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "title": "IoT Innovation Day",
+      "date": "May 20, 2022",
+      "location": "Innovation Hub",
+      "description": "A day-long event focused on Internet of Things applications and innovations.",
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  
+  "galleryImages" : [
+    "/assets/events/dyuksha.jpg",
+    "/assets/events/association_day.jpg",
+    "/assets/events/jwaala.jpg",
+    "/assets/events/poster.jpg",
+    "/assets/events/talk_session.jpg",
+    "/assets/events/xtreme.jpg",
+    "/assets/events/bug_bounty.jpg",
+    "/assets/events/industrial.jpg",
+    "/assets/events/talk_session.jpg",
+    "/assets/events/xtreme.jpg",
+    "/assets/events/bug_bounty.jpg",
+    "/assets/events/industrial.jpg"
+  ],
+
+  "departmentAchievements": [
+    {
+      "id": 1,
+      "title": "Best Department Award",
+      "date": "June 2023",
+      "description": "The CSE Department won the Best Department Award at the Engineering Excellence Awards for outstanding academic and extracurricular achievements.",
+      "photo": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 2,
+      "title": "Smart India Hackathon Winners",
+      "date": "April 2023",
+      "description": "A team of CSE students won the Smart India Hackathon 2023 by developing an innovative solution for sustainable urban mobility.",
+      "photo": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 3,
+      "title": "Research Excellence Award",
+      "date": "March 2023",
+      "description": "The department received recognition for publishing the highest number of research papers in reputed international journals among all engineering colleges in the region.",
+      "photo": "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=800&q=80"
     },
     {
       "id": 4,
-      "name": "Dr. James Wilson",
-      "photo": "/assets/faculty/faculty4.jpg",
-      "designation": "Associate Professor"
-    }
-  ],
-  "labAssistants": [
-    {
-      "id": 1,
-      "name": "Robert Davis",
-      "photo": "/assets/lab-assistants/assistant1.jpg",
-      "designation": "Senior Lab Assistant"
-    },
-    {
-      "id": 2,
-      "name": "Anita Gupta",
-      "photo": "/assets/lab-assistants/assistant2.jpg",
-      "designation": "Lab Technician"
-    },
-    {
-      "id": 3,
-      "name": "David Wong",
-      "photo": "/assets/lab-assistants/assistant3.jpg",
-      "designation": "Lab Assistant"
-    }
-  ],
-  "labs": [
-    {
-      "id": 1,
-      "name": "Programming Lab",
-      "image": "/assets/labs/lab1.jpg",
-      "description": "Equipped with high-performance computers loaded with the latest development environments and programming tools for students to practice coding and problem-solving."
-    },
-    {
-      "id": 2,
-      "name": "Network Lab",
-      "image": "/assets/labs/lab2.jpg",
-      "description": "Features Cisco routers, switches, and network simulation software to help students understand network architectures, protocols, and configurations."
-    },
-    {
-      "id": 3,
-      "name": "Research Lab",
-      "image": "/assets/labs/lab3.jpg",
-      "description": "Advanced computing facilities for research in areas like artificial intelligence, machine learning, big data analytics, and cloud computing."
-    }
-  ],
-  "placements": {
-    "currentYear": [
-      {
-        "id": 1,
-        "name": "Alex Martinez",
-        "photo": "/assets/placements/student1.jpg",
-        "company": "Google",
-        "designation": "Software Engineer"
-      },
-      {
-        "id": 2,
-        "name": "Priya Sharma",
-        "photo": "/assets/placements/student2.jpg",
-        "company": "Microsoft",
-        "designation": "UX Designer"
-      },
-      {
-        "id": 3,
-        "name": "David Kim",
-        "photo": "/assets/placements/student3.jpg",
-        "company": "Amazon",
-        "designation": "Backend Developer"
-      },
-      {
-        "id": 4,
-        "name": "Aisha Patel",
-        "photo": "/assets/placements/student4.jpg",
-        "company": "TCS",
-        "designation": "System Analyst"
-      }
-    ],
-    "historicalYears": [
-      {
-        "year": "2022-23",
-        "image": "/assets/placements/batch2022.jpg",
-        "summary": "The 2022-23 batch achieved a placement rate of 92% with 35 students placed in top companies."
-      },
-      {
-        "year": "2021-22",
-        "image": "/assets/placements/batch2021.jpg",
-        "summary": "The 2021-22 batch achieved a placement rate of 88% with 32 students placed across various sectors."
-      },
-      {
-        "year": "2020-21",
-        "image": "/assets/placements/batch2020.jpg",
-        "summary": "The 2020-21 batch had a placement rate of 86% despite pandemic challenges."
-      }
-    ]
-  },
-  "placedStudents": [
-    {
-      "id": 1,
-      "name": "Arun Kumar",
-      "photo": "/assets/students/student1.jpg",
-      "company": "Microsoft",
-      "companyLogo": "/assets/companies/microsoft.png",
-      "batch": "2022-23 Batch"
-    },
-    {
-      "id": 2,
-      "name": "Priya Singh",
-      "photo": "/assets/students/student2.jpg",
-      "company": "Amazon",
-      "companyLogo": "/assets/companies/amazon.png",
-      "batch": "2022-23 Batch"
-    },
-    {
-      "id": 3,
-      "name": "Rahul Sharma",
-      "photo": "/assets/students/student3.jpg",
-      "company": "Google",
-      "companyLogo": "/assets/companies/google.png",
-      "batch": "2021-22 Batch"
-    },
-    {
-      "id": 4,
-      "name": "Anjali Patel",
-      "photo": "/assets/students/student4.jpg",
-      "company": "Adobe",
-      "companyLogo": "/assets/companies/adobe.png",
-      "batch": "2022-23 Batch"
+      "title": "Industry Partnership Award",
+      "date": "January 2023",
+      "description": "The CSE department was recognized for establishing strong industry partnerships resulting in internships, placements, and collaborative research projects.",
+      "photo": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
     },
     {
       "id": 5,
-      "name": "Vikram Mehta",
-      "photo": "/assets/students/student5.jpg",
-      "company": "IBM",
-      "companyLogo": "/assets/companies/ibm.png",
-      "batch": "2021-22 Batch"
+      "title": "ACM Coding Competition Regional Winners",
+      "date": "November 2022",
+      "description": "CSE students secured first place in the ACM Coding Competition at the regional level, qualifying for the national finals.",
+      "photo": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80"
     },
     {
       "id": 6,
-      "name": "Sneha Reddy",
-      "photo": "/assets/students/student6.jpg",
-      "company": "Wipro",
-      "companyLogo": "/assets/companies/wipro.png",
-      "batch": "2022-23 Batch"
+      "title": "Best Technical Project Exhibition",
+      "date": "October 2022",
+      "description": "The department's final year projects exhibition was recognized as the Best Technical Exhibition by the State Technical Education Board.",
+      "photo": "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 7,
+      "title": "NASSCOM Technical Innovation Award",
+      "date": "September 2022",
+      "description": "A group of students from the department received the NASSCOM Technical Innovation Award for their project on AI-based healthcare solutions.",
+      "photo": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 8,
+      "title": "Best Technical Symposium",
+      "date": "August 2022",
+      "description": "The department's annual technical symposium 'TechVista 2022' was awarded as the Best Technical Symposium among engineering colleges in the state.",
+      "photo": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 9,
+      "title": "IEEE Student Branch Excellence Award",
+      "date": "July 2022",
+      "description": "The IEEE Student Branch of the department received the Excellence Award for organizing quality technical events and workshops throughout the year.",
+      "photo": "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 10,
+      "title": "Outstanding Placement Performance",
+      "date": "May 2022",
+      "description": "The department achieved 95% placement rate for the academic year 2021-22, with students being placed in top multinational companies.",
+      "photo": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 11,
+      "title": "National Technical Quiz Champions",
+      "date": "April 2022",
+      "description": "A team of CSE students won the National Technical Quiz Championship organized by the Indian Society of Technical Education.",
+      "photo": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": 12,
+      "title": "Best Technical Paper Award",
+      "date": "March 2022",
+      "description": "Faculty and students from the department received the Best Technical Paper Award at the International Conference on Advanced Computing Technologies.",
+      "photo": "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=800&q=80"
     }
   ]
 }

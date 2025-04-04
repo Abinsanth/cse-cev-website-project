@@ -1,8 +1,24 @@
 
-import { useEffect } from "react";
-import { Calendar, MapPin, Users } from "lucide-react";
+import { useEffect, useState } from "react";
+import { Calendar, MapPin, Users, ChevronDown } from "lucide-react";
+import departmentData from "@/data/departmentData.json";
+import { Button } from "@/components/ui/button";
 
 const About = () => {
+  const [showAllEvents, setShowAllEvents] = useState(false);
+  const [showAllGallery, setShowAllGallery] = useState(false);
+  
+  const initialEventsCount = 6;
+  const initialGalleryCount = 8;
+  
+  const displayedEvents = showAllEvents ? 
+    departmentData.pastEvents : 
+    departmentData.pastEvents.slice(0, initialEventsCount);
+    
+  const displayedGallery = showAllGallery ? 
+    departmentData.galleryImages : 
+    departmentData.galleryImages.slice(0, initialGalleryCount);
+
   useEffect(() => {
     // Set page title
     document.title = "About Us - CSE Department";
@@ -20,62 +36,6 @@ const About = () => {
       }
     }
   }, []);
-
-  const pastEvents = [
-    {
-      title: "National Conference on Advanced Computing",
-      date: "March 15-17, 2023",
-      location: "Main Auditorium",
-      description: "A three-day conference featuring keynote speeches, paper presentations, and panel discussions on various aspects of advanced computing.",
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      title: "Workshop on Artificial Intelligence",
-      date: "January 10, 2023",
-      location: "Conference Hall",
-      description: "A hands-on workshop on AI applications, machine learning algorithms, and deep learning techniques conducted by industry experts.",
-      image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      title: "Industry-Academia Meet",
-      date: "November 5, 2022",
-      location: "Seminar Hall",
-      description: "An interactive session between industry professionals and academia to bridge the gap between theoretical knowledge and industry requirements.",
-      image: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      title: "Hackathon: Code for Change",
-      date: "September 20-21, 2022",
-      location: "Computer Labs",
-      description: "A 24-hour coding competition where students developed innovative solutions for real-world problems.",
-      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      title: "Technical Symposium: TechVista 2022",
-      date: "August 12-13, 2022",
-      location: "College Campus",
-      description: "An annual technical symposium featuring coding competitions, paper presentations, and technical quiz competitions.",
-      image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80"
-    },
-    {
-      title: "Workshop on Cybersecurity",
-      date: "July 5, 2022",
-      location: "Seminar Hall",
-      description: "A workshop on ethical hacking, network security, and cybersecurity best practices conducted by security experts.",
-      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80"
-    }
-  ];
-
-  const galleryImages = [
-    "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1603354350317-6f7aaa5911c5?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80",
-    "https://images.unsplash.com/photo-1590650153855-d9e808231d41?auto=format&fit=crop&w=800&q=80"
-  ];
 
   return (
     <main className="pt-24 pb-20">
@@ -109,7 +69,7 @@ const About = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" 
+                src="/assets/cev/CEV2.jpg"
                 alt="Department Building" 
                 className="rounded-lg shadow-xl w-full h-auto object-cover"
               />
@@ -120,25 +80,27 @@ const About = () => {
         </section>
 
         {/* Vision and Mission */}
-        <section className="mb-20 bg-gray-50 p-12 rounded-lg">
+        <section className="mb-20 bg-gray-100 p-12 rounded-lg">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
               <h2 className="text-3xl font-bold mb-6 text-cse">Our Vision</h2>
               <p className="text-gray-700">
-                To become a center of excellence in Computer Science and Engineering education, producing 
-                competent professionals with sound technical knowledge, ethical values, and a commitment 
-                to serve society through innovation.
+              To be a world class technical education institute with the highest quality 
+              and standards of excellence to meet the demands of business industry and 
+              the community and there by to contribute to India's socio-economic progress.
               </p>
             </div>
             <div>
               <h2 className="text-3xl font-bold mb-6 text-cse">Our Mission</h2>
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
-                <li>To provide quality education incorporating the latest technological advancements</li>
-                <li>To cultivate research aptitude among students and faculty</li>
-                <li>To develop industry-ready professionals with strong technical and soft skills</li>
-                <li>To foster entrepreneurship and innovation in computing technologies</li>
-                <li>To inculcate ethical values and social responsibility among students</li>
-              </ul>
+              <ul className="list-disc list-outside pl-5 text-gray-700 space-y-2 mb-6">
+              <li>Upgrading the existing software and hardware facilities in the computer centers and laboratories to match the outcomes of the programs offered.</li>
+              <li>Organize need based faculty and staff development programs and encourage faculty to participate in national and international conferences. Encourage faculty to organize frequent departmental seminars and use class room seminar methods to improve abilities of the students.</li>
+              <li> Sponsor faculty and staff on study leave to upgrade their qualification.</li>
+              <li>Explore opportunities for development and assessment of Graduate Attributes in the co-curricular and extracurricular activities.</li>
+              <li>To mould the students by inculcating the professional ethics.</li>
+              <li>To prepare graduates for leadership in profession and in higher education</li>
+              <li>To prepare graduates for leadership in profession and in higher education</li>
+            </ul>
             </div>
           </div>
         </section>
@@ -147,12 +109,12 @@ const About = () => {
         <section id="events" className="mb-20">
           <h2 className="text-3xl font-bold mb-8 text-cse text-center">Past Events</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {pastEvents.map((event, index) => (
+            {displayedEvents.map((event, index) => (
               <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden card-hover">
                 <img 
                   src={event.image} 
                   alt={event.title} 
-                  className="w-full h-48 object-cover"
+                  className="w-full h-48 object-cover bg-white"
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-3">{event.title}</h3>
@@ -169,13 +131,24 @@ const About = () => {
               </div>
             ))}
           </div>
+          
+          {!showAllEvents && departmentData.pastEvents.length > initialEventsCount && (
+            <div className="mt-12 flex justify-center">
+              <Button 
+                onClick={() => setShowAllEvents(true)}
+                className="bg-cse hover:bg-cse-light text-white flex items-center gap-2"
+              >
+                View All Events <ChevronDown className="h-4 w-4" />
+              </Button>
+            </div>
+          )}
         </section>
 
         {/* Department Gallery */}
         <section id="gallery" className="mb-20">
           <h2 className="text-3xl font-bold mb-8 text-cse text-center">Department Gallery</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {galleryImages.map((image, index) => (
+            {displayedGallery.map((image, index) => (
               <div key={index} className="rounded-lg overflow-hidden shadow-md card-hover">
                 <img 
                   src={image} 
@@ -185,6 +158,17 @@ const About = () => {
               </div>
             ))}
           </div>
+          
+          {!showAllGallery && departmentData.galleryImages.length > initialGalleryCount && (
+            <div className="mt-8 flex justify-center">
+              <Button 
+                onClick={() => setShowAllGallery(true)}
+                className="bg-cse hover:bg-cse-light text-white flex items-center gap-2"
+              >
+                View All Images <ChevronDown className="h-4 w-4" />
+              </Button>
+            </div>
+          )}
         </section>
 
         {/* Faculty Team */}
@@ -199,38 +183,38 @@ const About = () => {
               <div className="flex flex-col items-center text-center">
                 <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
                   <img 
-                    src="https://randomuser.me/api/portraits/men/42.jpg" 
-                    alt="HOD" 
+                    src="/assets/faculty/vinod.jpg" 
+                    alt="Principal" 
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h4 className="text-lg font-semibold">Dr. Anand Kumar</h4>
-                <p className="text-cse-accent">Head of Department</p>
+                <h4 className="text-lg font-semibold">Dr. Vinod Pottakulath</h4>
+                <p className="text-cse-accent">principal</p>
                 <p className="text-sm text-gray-600 mt-2">PhD in Computer Science</p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
                   <img 
-                    src="https://randomuser.me/api/portraits/women/42.jpg" 
+                    src="/assets/faculty/sreena.jpg" 
                     alt="Professor" 
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h4 className="text-lg font-semibold">Dr. Meera Nair</h4>
-                <p className="text-cse-accent">Professor</p>
-                <p className="text-sm text-gray-600 mt-2">PhD in Data Science</p>
+                <h4 className="text-lg font-semibold">Ms. Sreena S</h4>
+                <p className="text-cse-accent">Head of the Department</p>
+                <p className="text-sm text-gray-600 mt-2">M.Tech in Computer Science and Engineering</p>
               </div>
               <div className="flex flex-col items-center text-center">
                 <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
                   <img 
-                    src="https://randomuser.me/api/portraits/men/46.jpg" 
-                    alt="Associate Professor" 
+                    src="/assets/faculty/sayooj.jpg" 
+                    alt="CS Associaation Secretary" 
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h4 className="text-lg font-semibold">Dr. Rahul Menon</h4>
-                <p className="text-cse-accent">Associate Professor</p>
-                <p className="text-sm text-gray-600 mt-2">PhD in Network Security</p>
+                <h4 className="text-lg font-semibold">Sayooj V P</h4>
+                <p className="text-cse-accent">CS Associaation Secretary</p>
+                <p className="text-sm text-gray-600 mt-2">S8 CSE Batch 2021-25</p>
               </div>
             </div>
           </div>

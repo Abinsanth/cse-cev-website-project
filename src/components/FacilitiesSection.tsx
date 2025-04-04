@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Users, Computer, GraduationCap } from "lucide-react";
+import { Users, Computer, GraduationCap, Award } from "lucide-react";
 
 const FacilitiesSection = () => {
   const facilities = [
@@ -8,19 +8,25 @@ const FacilitiesSection = () => {
       title: "Faculties",
       description: "Learn from our highly qualified faculty with industry experience.",
       icon: <Users className="w-10 h-10 text-cse-accent" />,
-      link: "/facilities#faculties"
+      link: "/facilities?tab=faculties"
     },
     {
       title: "Laboratories",
       description: "State-of-the-art computer labs with the latest hardware and software.",
       icon: <Computer className="w-10 h-10 text-cse-accent" />,
-      link: "/facilities#laboratories"
+      link: "/facilities?tab=laboratories"
     },
     {
       title: "Placements",
       description: "Strong industry connections ensuring excellent placement opportunities.",
       icon: <GraduationCap className="w-10 h-10 text-cse-accent" />,
-      link: "/facilities#placements"
+      link: "/facilities?tab=placements"
+    },
+    {
+      title: "CS Association",
+      description: "Student-led initiatives, events, competitions, and department achievements.",
+      icon: <Award className="w-10 h-10 text-cse-accent" />,
+      link: "/facilities?tab=cs-association"
     }
   ];
 
@@ -35,15 +41,17 @@ const FacilitiesSection = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {facilities.map((facility, index) => (
             <Link key={index} to={facility.link} className="block">
-              <div className="bg-white rounded-lg shadow-md p-6 h-full card-hover">
-                <div className="mb-4">
-                  {facility.icon}
+              <div className="bg-white rounded-lg shadow-md overflow-hidden h-full card-hover">
+                <div className="p-6 h-full flex flex-col">
+                  <div className="mb-4">
+                    {facility.icon}
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">{facility.title}</h3>
+                  <p className="text-gray-600">{facility.description}</p>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{facility.title}</h3>
-                <p className="text-gray-600">{facility.description}</p>
               </div>
             </Link>
           ))}

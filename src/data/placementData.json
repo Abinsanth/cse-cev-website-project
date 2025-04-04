@@ -80,7 +80,16 @@
       "company": "Infosys",
       "companyLogo": "/assets/companies/infosys.png",
       "designation": "Software Tester"
+    },
+    {
+      "id": 11,
+      "name": "Neha Gupta",
+      "photo": "/assets/placements/student10.jpg",
+      "company": "Infosys",
+      "companyLogo": "/assets/companies/infosys.png",
+      "designation": "Software Tester"
     }
+    
   ],
   "recentPlacements": [
     {

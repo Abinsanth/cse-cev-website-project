@@ -86,45 +86,24 @@
   "events": [
     {
       "id": 1,
-      "title": "National Conference on Advanced Computing",
-      "date": "March 15-17, 2023",
-      "location": "Main Auditorium",
-      "image": "/assets/events/event1.jpg"
+      "title": "COLLEGE DAY",
+      "date": "April 03, 2025",
+      "location": "Centroid",
+      "image": "/assets/events/college_day.jpg"
     },
     {
       "id": 2,
-      "title": "Workshop on Artificial Intelligence",
-      "date": "January 10, 2023",
-      "location": "Conference Hall",
-      "image": "/assets/events/event2.jpg"
+      "title": "UI DESIGN HACKATHON",
+      "date": "March 28, 2025",
+      "location": "ASAP Hall",
+      "image": "/assets/events/design.jpg"
     },
     {
       "id": 3,
-      "title": "Industry-Academia Meet",
-      "date": "November 5, 2022",
-      "location": "Seminar Hall",
-      "image": "/assets/events/event3.jpg"
-    },
-    {
-      "id": 4,
-      "title": "Hackathon 2022",
-      "date": "October 8-9, 2022",
-      "location": "Computer Labs",
-      "image": "/assets/events/event4.jpg"
-    },
-    {
-      "id": 5,
-      "title": "Cloud Computing Webinar",
-      "date": "August 20, 2022",
-      "location": "Online",
-      "image": "/assets/events/event5.jpg"
-    },
-    {
-      "id": 6,
-      "title": "Tech Fest 2022",
-      "date": "February 25-27, 2022",
-      "location": "College Campus",
-      "image": "/assets/events/event6.jpg"
+      "title": "TECH AURA",
+      "date": "March 28, 2025",
+      "location": "ECE Block",
+      "image": "/assets/events/tech_aura.jpg"
     }
   ]
 }

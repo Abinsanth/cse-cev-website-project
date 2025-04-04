@@ -11,14 +11,23 @@ interface PlacedStudent {
   photo: string;
   company: string;
   companyLogo?: string;
-  batch: string;
+  batch?: string;
+  designation?: string;
 }
 
 const PlacementProfiles = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const profilesPerPage = 3;
-  const placedStudents = placementData.recentPlacements;
-  const totalPages = Math.ceil(placedStudents.length / profilesPerPage);
+  
+  // Get the last 10 students from currentYearPlacements
+  const recentPlacements = [...placementData.currentYearPlacements]
+    .slice(-10)
+    .map(student => ({
+      ...student,
+      batch: "Current Batch"
+    }));
+    
+  const totalPages = Math.ceil(recentPlacements.length / profilesPerPage);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -28,7 +37,7 @@ const PlacementProfiles = () => {
     return () => clearInterval(interval);
   }, [totalPages]);
 
-  const currentProfiles = placedStudents.slice(
+  const currentProfiles = recentPlacements.slice(
     currentPage * profilesPerPage,
     (currentPage + 1) * profilesPerPage
   );
