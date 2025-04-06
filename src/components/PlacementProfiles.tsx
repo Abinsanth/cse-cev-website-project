@@ -24,7 +24,7 @@ const PlacementProfiles = () => {
     .slice(-10)
     .map(student => ({
       ...student,
-      batch: "Current Batch"
+      batch: "2021-25 Batch"
     }));
     
   const totalPages = Math.ceil(recentPlacements.length / profilesPerPage);

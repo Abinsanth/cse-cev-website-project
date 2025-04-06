@@ -3,90 +3,90 @@
   "currentYearPlacements": [
     {
       "id": 1,
-      "name": "Alex Martinez",
+      "name": "Arjun",
       "photo": "/assets/placements/student1.jpg",
-      "company": "Google",
-      "companyLogo": "/assets/companies/google.png",
-      "designation": "Software Engineer"
-    },
-    {
-      "id": 2,
-      "name": "Priya Sharma",
-      "photo": "/assets/placements/student2.jpg",
-      "company": "Microsoft",
-      "companyLogo": "/assets/companies/microsoft.png",
-      "designation": "UX Designer"
-    },
-    {
-      "id": 3,
-      "name": "David Kim",
-      "photo": "/assets/placements/student3.jpg",
-      "company": "Amazon",
-      "companyLogo": "/assets/companies/amazon.png",
-      "designation": "Backend Developer"
-    },
-    {
-      "id": 4,
-      "name": "Aisha Patel",
-      "photo": "/assets/placements/student4.jpg",
-      "company": "TCS",
-      "companyLogo": "/assets/companies/tcs.png",
-      "designation": "System Analyst"
-    },
-    {
-      "id": 5,
-      "name": "Mohammed Ali",
-      "photo": "/assets/placements/student5.jpg",
-      "company": "IBM",
-      "companyLogo": "/assets/companies/ibm.png",
-      "designation": "Cloud Solutions Architect"
-    },
-    {
-      "id": 6,
-      "name": "Sophia Chen",
-      "photo": "/assets/placements/student6.jpg",
-      "company": "Adobe",
-      "companyLogo": "/assets/companies/adobe.png",
-      "designation": "Front-end Developer"
-    },
-    {
-      "id": 7,
-      "name": "Rahul Mehta",
-      "photo": "/assets/placements/student7.jpg",
-      "company": "Accenture",
-      "companyLogo": "/assets/companies/accenture.png",
-      "designation": "Data Analyst"
-    },
-    {
-      "id": 8,
-      "name": "Emma Wilson",
-      "photo": "/assets/placements/student8.jpg",
-      "company": "Facebook",
-      "companyLogo": "/assets/companies/facebook.png",
-      "designation": "Product Manager"
-    },
-    {
-      "id": 9,
-      "name": "Jason Lee",
-      "photo": "/assets/placements/student9.jpg",
-      "company": "Wipro",
-      "companyLogo": "/assets/companies/wipro.png",
-      "designation": "Java Developer"
-    },
-    {
-      "id": 10,
-      "name": "Neha Gupta",
-      "photo": "/assets/placements/student10.jpg",
       "company": "Infosys",
-      "companyLogo": "/assets/companies/infosys.png",
+      "companyLogo": "/assets/logo/infosys-logo.png",
       "designation": "Software Tester"
     },
     {
-      "id": 11,
-      "name": "Neha Gupta",
-      "photo": "/assets/placements/student10.jpg",
+      "id": 2,
+      "name": "Navaneetha",
+      "photo": "/assets/students/navaneetha.jpg",
       "company": "Infosys",
-      "companyLogo": "/assets/companies/infosys.png",
+      "companyLogo": "/assets/logo/infosys-logo.png",
+      "designation": "Software Tester"
+    },
+    {
+      "id": 3,
+      "name": "Sandra P",
+      "photo": "/assets/students/sandra_p.jpg",
+      "company": "Tech Mahindra",
+      "companyLogo": "/assets/logo/mahindra_logo.png",
+      "designation": "Software Engineer"
+    },
+    {
+      "id": 4,
+      "name": "Athish Raj UK",
+      "photo": "/assets/students/athul_raj_u_k.jpg",
+      "company": "Tech Mahindra",
+      "companyLogo": "/assets/logo/mahindra_logo.png",
+      "designation": "Software Engineer"
+    },
+    {
+      "id": 5,
+      "name": "Anujith",
+      "photo": "/assets/students/anujith.jpg",
+      "company": "Tech Mahindra",
+      "companyLogo": "/assets/logo/mahindra_logo.png",
+      "designation": "Software Engineer"
+    },
+    {
+      "id": 6,
+      "name": "Helna",
+      "photo": "/assets/students/helena.jpg",
+      "company": "Tech Mahindra",
+      "companyLogo": "/assets/logo/mahindra_logo.png",
+      "designation": "Software Engineer"
+    },
+    {
+      "id": 7,
+      "name": "Krishnadev",
+      "photo": "/assets/students/krishnadev.jpg",
+      "company": "Talrop",
+      "companyLogo": "/assets/logo/ust_logo.png",
+      "designation": "Software Engineer"
+    },
+    {
+      "id": 8,
+      "name": "Sreelakshmi",
+      "photo": "/assets/students/sreelakshmi.jpg",
+      "company": "Talrop",
+      "companyLogo": "/assets/logo/Talrop_logo.png",
+      "designation": "Software Engineer"
+    },
+    {
+      "id": 9,
+      "name": "Fida Gazeena",
+      "photo": "/assets/students/fidha_ghazeena.jpg",
+      "company": "Infosys",
+      "companyLogo": "/assets/logo/infosys-logo.png",
+      "designation": "Software Engineer"
+    },
+    {
+      "id": 10,
+      "name": "Muhammad Ashiq TA",
+      "photo": "/assets/students/ashiq_ta.jpg",
+      "company": "Talrop",
+      "companyLogo": "/assets/logo/Talrop_logo.png",
+      "designation": "Software Engineer"
+    },
+    {
+      "id": 11,
+      "name": "Aysha Diya",
+      "photo": "/assets/students/ayisha_diya.jpg",
+      "company": "Infosys",
+      "companyLogo": "/assets/logo/infosys-logo.png",
       "designation": "Software Tester"
     }
     
